@@ -1,1 +1,1 @@
-rootProject.name = "serve"
+rootProject.name = "kmm-explore-serve"

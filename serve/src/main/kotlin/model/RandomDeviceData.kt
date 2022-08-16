@@ -1,4 +1,4 @@
-package com.korilin.serve.model
+package com.korilin.kmm.explore.serve.model
 
 data class RandomDeviceData(
     val time: Long,

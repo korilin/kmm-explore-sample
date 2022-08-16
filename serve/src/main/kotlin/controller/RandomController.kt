@@ -1,12 +1,10 @@
-package com.korilin.serve.controller
+package com.korilin.kmm.explore.serve.controller
 
-import com.korilin.serve.model.RandomDeviceData
+import com.korilin.kmm.explore.serve.model.RandomDeviceData
 import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
-import java.time.LocalDateTime
 import java.util.Date
 
 private val images = arrayOf(

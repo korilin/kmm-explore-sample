@@ -1,4 +1,4 @@
-package com.korilin.serve
+package com.korilin.kmm.explore.serve
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
