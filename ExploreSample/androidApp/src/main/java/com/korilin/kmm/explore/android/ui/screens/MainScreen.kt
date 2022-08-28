@@ -1,8 +1,6 @@
 package com.korilin.kmm.explore.android.ui.screens
 
 import android.text.format.DateFormat
-import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -10,7 +8,6 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.Card
 import androidx.compose.material.Divider
-import androidx.compose.material.Shapes
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -23,13 +20,13 @@ import com.korilin.kmm.explore.android.model.TextAction
 import com.korilin.kmm.explore.android.ui.component.PrimaryButton
 import com.korilin.kmm.explore.android.ui.component.Title
 import com.korilin.kmm.explore.android.ui.theme.appColors
-import com.korilin.kmm.explore.model.DeviceRandom
+import com.korilin.kmm.explore.model.ImageMessage
 import java.util.*
 
 @Composable
 fun MainScreen(
     buttonsActions: List<TextAction>,
-    randomData: List<DeviceRandom>
+    randomData: List<ImageMessage>
 ) = Box(
     modifier = Modifier
         .background(appColors.background)
@@ -61,7 +58,7 @@ fun MainScreen(
 
 @Composable
 fun RandomList(
-    randomData: List<DeviceRandom>
+    randomData: List<ImageMessage>
 ) = LazyColumn {
     items(randomData, key = { it.time }) {
         RandomItem(it)
@@ -69,7 +66,7 @@ fun RandomList(
 }
 
 @Composable
-fun RandomItem(item: DeviceRandom) = Card(
+fun RandomItem(item: ImageMessage) = Card(
     modifier = Modifier.wrapContentSize()
 ) {
     Column(
@@ -106,7 +103,7 @@ fun MainScreenPreview() = MainScreen(
         TextAction("Kotlin") {}
     ),
     randomData = listOf(
-        DeviceRandom(
+        ImageMessage(
             time = 1661698266062,
             img = "http://localhost:8888/download/img/File3.jpg",
             msg = "Android: hi"
@@ -117,7 +114,7 @@ fun MainScreenPreview() = MainScreen(
 @Preview
 @Composable
 fun RandomItemPreview() = RandomItem(
-    item = DeviceRandom(
+    item = ImageMessage(
         time = 1661693205628,
         img = "http://localhost:8888/download/img/File3.jpg",
         msg = "Android: hi"
