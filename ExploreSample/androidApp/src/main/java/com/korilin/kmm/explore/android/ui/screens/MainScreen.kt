@@ -20,13 +20,13 @@ import com.korilin.kmm.explore.android.model.TextAction
 import com.korilin.kmm.explore.android.ui.component.PrimaryButton
 import com.korilin.kmm.explore.android.ui.component.Title
 import com.korilin.kmm.explore.android.ui.theme.appColors
-import com.korilin.kmm.explore.model.ImageMessage
+import com.korilin.kmm.explore.model.ImageMessageRecord
 import java.util.*
 
 @Composable
 fun MainScreen(
     buttonsActions: List<TextAction>,
-    randomData: List<ImageMessage>
+    requireRecords: () -> List<ImageMessageRecord>
 ) = Box(
     modifier = Modifier
         .background(appColors.background)
@@ -52,21 +52,21 @@ fun MainScreen(
 
         Divider(modifier = Modifier.padding(vertical = 20.dp))
 
-        RandomList(randomData)
+        RecordList(requireRecords)
     }
 }
 
 @Composable
-fun RandomList(
-    randomData: List<ImageMessage>
+fun RecordList(
+    requireRecords: () -> List<ImageMessageRecord>
 ) = LazyColumn {
-    items(randomData, key = { it.time }) {
-        RandomItem(it)
+    items(requireRecords(), key = { it.time }) {
+        ImageMessageRecord(it)
     }
 }
 
 @Composable
-fun RandomItem(item: ImageMessage) = Card(
+fun ImageMessageRecord(item: ImageMessageRecord) = Card(
     modifier = Modifier.wrapContentSize()
 ) {
     Column(
@@ -102,19 +102,21 @@ fun MainScreenPreview() = MainScreen(
         TextAction("Hi") {},
         TextAction("Kotlin") {}
     ),
-    randomData = listOf(
-        ImageMessage(
-            time = 1661698266062,
-            img = "http://localhost:8888/download/img/File3.jpg",
-            msg = "Android: hi"
+    requireRecords = {
+        listOf(
+            ImageMessageRecord(
+                time = 1661698266062,
+                img = "http://localhost:8888/download/img/File3.jpg",
+                msg = "Android: hi"
+            )
         )
-    )
+    }
 )
 
 @Preview
 @Composable
-fun RandomItemPreview() = RandomItem(
-    item = ImageMessage(
+fun RandomItemPreview() = ImageMessageRecord(
+    item = ImageMessageRecord(
         time = 1661693205628,
         img = "http://localhost:8888/download/img/File3.jpg",
         msg = "Android: hi"

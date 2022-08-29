@@ -1,9 +1,8 @@
 package com.korilin.kmm.explore.datasource.network
 
-import com.korilin.kmm.explore.model.ImageMessage
-import com.korilin.kmm.explore.model.PostMessage
+import com.korilin.kmm.explore.Platform
+import com.korilin.kmm.explore.model.ImageMessageRecord
 import kotlinx.serialization.decodeFromString
-import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.json.Json
 
 private const val POST_MSG_KEY_DEVICE = "device"
@@ -15,12 +14,12 @@ class MessagePoster(
 
     private val baseUrl = REMOTE_URL
 
-    suspend fun postMsg(message: PostMessage): Result<ImageMessage> {
+    suspend fun postMsg(message: String): Result<ImageMessageRecord> {
         val url = baseUrl.plus(POST_MSG_PATH)
         val result = requester.post(
             url, mapOf(
-                POST_MSG_KEY_DEVICE to message.device,
-                POST_MSG_KEY_MSG to message.msg
+                POST_MSG_KEY_DEVICE to Platform().platform,
+                POST_MSG_KEY_MSG to message
             )
         )
         return decodeBody(result)

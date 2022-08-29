@@ -15,7 +15,7 @@ import kotlin.coroutines.resume
 import kotlin.coroutines.suspendCoroutine
 
 
-class OkHttpNetRequester private constructor() : NetRequester {
+class OkHttpNetRequester: NetRequester {
 
     private val client = OkHttpClient()
 

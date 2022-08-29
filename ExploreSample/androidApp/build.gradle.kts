@@ -27,6 +27,10 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = composeCompilerVersion
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -35,6 +39,7 @@ dependencies {
     // android
     implementation("com.google.android.material:material:1.6.1")
     implementation("androidx.appcompat:appcompat:1.5.0")
+    implementation("androidx.appcompat:appcompat-resources:1.5.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     // compose
