@@ -10,6 +10,7 @@ import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.Divider
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
@@ -88,9 +89,11 @@ fun ImageMessageRecord(item: ImageMessageRecord) = Card(
             .wrapContentSize()
             .padding(20.dp),
     ) {
-        val datetime = DateFormat.format("yyyy-MM-dd HH:mm:ss", Date(item.time))
+        val datetime = remember(key1 = item.time) {
+            DateFormat.format("yyyy-MM-dd HH:mm:ss", Date(item.time)).toString()
+        }
         Text(
-            text = datetime.toString(),
+            text = datetime,
             fontSize = 10.sp,
             color = appColors.secondaryTextColor
         )
