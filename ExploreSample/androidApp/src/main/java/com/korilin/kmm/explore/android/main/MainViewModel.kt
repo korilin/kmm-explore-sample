@@ -20,7 +20,7 @@ class MainViewModel : ViewModel() {
             MsgRepository.postMessage(message).onSuccess {
                 imageMessageRecordsState.add(it)
             }.onFailure {
-                Log.e("MainViewModel", "${it.message}")
+                Log.e("MainViewModel", it.stackTraceToString())
             }
         }
     }

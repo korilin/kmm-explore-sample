@@ -14,15 +14,17 @@ class MessagePoster(
 
     private val baseUrl = REMOTE_URL
 
-    suspend fun postMsg(message: String): Result<ImageMessageRecord> {
+    suspend fun postMsg(message: String): Result<ImageMessageRecord> = try {
         val url = baseUrl.plus(POST_MSG_PATH)
         val result = requester.post(
             url, mapOf(
-                POST_MSG_KEY_DEVICE to Platform().platform,
+                POST_MSG_KEY_DEVICE to Platform.platform,
                 POST_MSG_KEY_MSG to message
             )
         )
-        return decodeBody(result)
+        decodeBody(result)
+    } catch (e: Exception) {
+        Result.failure(e)
     }
 
     private inline fun <reified T> decodeBody(result: Result<String>) = if (result.isSuccess) {
