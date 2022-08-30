@@ -17,9 +17,10 @@ class MainViewModel : ViewModel() {
     val imageMessageRecordsState = mutableStateListOf<ImageMessageRecord>()
     val messageState = mutableStateOf("")
 
-    fun postMessage(message: String) {
+    fun postMessage() {
         viewModelScope.launch {
-            MsgRepository.postMessage(message).onSuccess {
+            MsgRepository.postMessage(messageState.value).onSuccess {
+                messageState.value = ""
                 imageMessageRecordsState.add(it)
             }.onFailure {
                 Log.e("MainViewModel", it.stackTraceToString())

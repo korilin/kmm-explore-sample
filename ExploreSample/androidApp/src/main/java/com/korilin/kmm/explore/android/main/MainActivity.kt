@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private val actions = listOf(
         TextAction("Request Data") {
-            viewModel.postMessage("hi")
+            viewModel.postMessage()
         },
         TextAction("Save Locally") {}
     )

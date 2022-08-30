@@ -5,7 +5,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.Card
 import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.Divider
@@ -16,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import coil.compose.AsyncImage
 import coil.compose.SubcomposeAsyncImage
 import com.korilin.kmm.explore.android.model.TextAction
 import com.korilin.kmm.explore.android.ui.component.EditText
@@ -55,7 +53,7 @@ fun MainScreen(
                 .fillMaxWidth()
                 .height(100.dp)
                 .padding(bottom = 20.dp)
-                .background(appColors.deepBackground)
+                .background(appColors.editorBackground)
         )
 
         for (textBtn in buttonsActions) {
@@ -98,17 +96,24 @@ fun ImageMessageRecord(item: ImageMessageRecord) = Card(
         )
         Text(
             text = item.msg, fontSize = 14.sp,
-            modifier = Modifier.padding(top = 5.dp, bottom = 10.dp),
+            modifier = Modifier.padding(top = 5.dp, bottom = 20.dp),
             color = appColors.primaryTextColor
         )
         SubcomposeAsyncImage(
             model = item.img,
             contentDescription = item.msg,
             loading = {
-                CircularProgressIndicator(
-                    color = appColors.primaryColor,
-                    strokeWidth = 5.dp
-                )
+                Box(
+                    modifier = Modifier
+                        .width(30.dp)
+                        .height(30.dp),
+                    contentAlignment = Alignment.Center
+                ) {
+                    CircularProgressIndicator(
+                        color = appColors.primaryColor,
+                        strokeWidth = 5.dp,
+                    )
+                }
             },
             modifier = Modifier
                 .width(300.dp)
