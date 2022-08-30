@@ -8,4 +8,4 @@ object ControllerPath {
     const val DOWNLOAD = "download"
 }
 
-const val DOWNLOAD_URL = "$DEBUG_BASE_URL/${ControllerPath.DOWNLOAD}/img"
+const val DOWNLOAD_PATH = "/${ControllerPath.DOWNLOAD}/img"
