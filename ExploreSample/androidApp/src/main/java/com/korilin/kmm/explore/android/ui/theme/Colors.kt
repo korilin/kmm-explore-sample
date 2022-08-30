@@ -12,12 +12,14 @@ val TextColor = Color(0xff000000)
 val SecondaryTextColor = Color(0xff424242)
 val BlueGrey = Color(0xff78909c)
 val LightBlueGrey = Color(0xffb0bec5)
+val LightGrew = Color(0xffeeeeee)
 
 private val mutableAppColors: State<AppColors> = mutableStateOf(Light)
 val appColors = mutableAppColors.value
 
 sealed interface AppColors {
     val background: Color
+    val deepBackground: Color
     val primaryColor: Color
     val primaryTextColor: Color
     val secondaryTextColor: Color
@@ -27,6 +29,7 @@ sealed interface AppColors {
 
 object Light : AppColors {
     override val background: Color = defaultBackground
+    override val deepBackground: Color = LightGrew
     override val primaryColor: Color = PrimaryColor
 
     override val primaryTextColor: Color = TextColor

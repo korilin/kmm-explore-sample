@@ -2,6 +2,7 @@ package com.korilin.kmm.explore.android.main
 
 import android.util.Log
 import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.snapshots.StateObject
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -13,7 +14,8 @@ import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
 
-     val imageMessageRecordsState = mutableStateListOf<ImageMessageRecord>()
+    val imageMessageRecordsState = mutableStateListOf<ImageMessageRecord>()
+    val messageState = mutableStateOf("")
 
     fun postMessage(message: String) {
         viewModelScope.launch {
@@ -23,5 +25,9 @@ class MainViewModel : ViewModel() {
                 Log.e("MainViewModel", it.stackTraceToString())
             }
         }
+    }
+
+    fun updateMessage(message: String) {
+        messageState.value = message
     }
 }

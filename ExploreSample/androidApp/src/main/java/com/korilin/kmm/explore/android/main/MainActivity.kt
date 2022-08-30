@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.korilin.kmm.explore.Greeting
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
+import androidx.compose.runtime.Composable
 import com.korilin.kmm.explore.android.model.TextAction
 import com.korilin.kmm.explore.android.ui.screens.MainScreen
 
@@ -26,9 +27,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MainScreen(actions) {
-                viewModel.imageMessageRecordsState
-            }
+            ScreenContent()
         }
     }
+
+    @Composable
+    private fun ScreenContent() =
+        MainScreen(actions,
+            requireRecords = { viewModel.imageMessageRecordsState },
+            requireMessage = { viewModel.messageState.value },
+            onMessageChange = { viewModel.updateMessage(it) }
+        )
 }

@@ -19,6 +19,7 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import coil.compose.SubcomposeAsyncImage
 import com.korilin.kmm.explore.android.model.TextAction
+import com.korilin.kmm.explore.android.ui.component.EditText
 import com.korilin.kmm.explore.android.ui.component.PrimaryButton
 import com.korilin.kmm.explore.android.ui.component.Title
 import com.korilin.kmm.explore.android.ui.theme.appColors
@@ -28,7 +29,9 @@ import java.util.*
 @Composable
 fun MainScreen(
     buttonsActions: List<TextAction>,
-    requireRecords: () -> List<ImageMessageRecord>
+    requireRecords: () -> List<ImageMessageRecord>,
+    requireMessage: () -> String,
+    onMessageChange: (String) -> Unit
 ) = Box(
     modifier = Modifier
         .background(appColors.background)
@@ -43,8 +46,17 @@ fun MainScreen(
             .fillMaxWidth(),
     ) {
         Title(text = "Explore Sample")
-        rememberLazyListState()
         Divider(modifier = Modifier.padding(vertical = 20.dp))
+
+        EditText(
+            requireValue = requireMessage,
+            onValueChange = onMessageChange,
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(100.dp)
+                .padding(bottom = 20.dp)
+                .background(appColors.deepBackground)
+        )
 
         for (textBtn in buttonsActions) {
             PrimaryButton(onClick = textBtn.onClick, modifier = Modifier.fillMaxWidth()) {
@@ -125,7 +137,9 @@ fun MainScreenPreview() = MainScreen(
                 msg = "Android: hi"
             )
         )
-    }
+    },
+    requireMessage = { "" },
+    onMessageChange = {}
 )
 
 @Preview
