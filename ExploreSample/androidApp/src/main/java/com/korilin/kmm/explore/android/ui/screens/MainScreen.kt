@@ -10,6 +10,7 @@ import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.Divider
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -127,28 +128,32 @@ fun ImageMessageRecord(item: ImageMessageRecord) = Card(
 
 @Preview
 @Composable
-fun MainScreenPreview() = MainScreen(
-    buttonsActions = listOf(
-        TextAction("Hi") {},
-        TextAction("Kotlin") {}
-    ),
-    requireRecords = {
-        listOf(
+fun MainScreenPreview() {
+    val list = remember {
+        mutableStateListOf(
             ImageMessageRecord(
-                time = 1661698266062,
-                img = "http://localhost:8888/download/img/File3.jpg",
-                msg = "Android: hi"
-            ),
-            ImageMessageRecord(
-                time = 1661698266065,
-                img = "http://localhost:8888/download/img/File3.jpg",
+                time = Date().time,
+                img = "http://192.168.3.18:8888/download/img/File9.jpg",
                 msg = "Android: hi"
             )
         )
-    },
-    requireMessage = { "" },
-    onMessageChange = {}
-)
+    }
+    MainScreen(
+        buttonsActions = listOf(
+            TextAction("Send Message") {
+                list.add(ImageMessageRecord(
+                    time = 1661698266065,
+                    img = "http://192.168.3.18:8888/download/img/File9.jpg",
+                    msg = "Android: hi"
+                ))
+            },
+            TextAction("Kotlin") {}
+        ),
+        requireRecords = { list },
+        requireMessage = { "" },
+        onMessageChange = {}
+    )
+}
 
 @Preview
 @Composable
