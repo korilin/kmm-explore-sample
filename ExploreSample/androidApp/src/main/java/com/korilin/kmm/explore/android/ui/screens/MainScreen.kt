@@ -7,6 +7,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.Card
+import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.material.Divider
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -16,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
+import coil.compose.SubcomposeAsyncImage
 import com.korilin.kmm.explore.android.model.TextAction
 import com.korilin.kmm.explore.android.ui.component.PrimaryButton
 import com.korilin.kmm.explore.android.ui.component.Title
@@ -63,6 +65,7 @@ fun RecordList(
     val records = requireRecords()
     items(records, key = { it.time }) {
         ImageMessageRecord(it)
+        Spacer(modifier = Modifier.height(10.dp))
     }
 }
 
@@ -86,9 +89,15 @@ fun ImageMessageRecord(item: ImageMessageRecord) = Card(
             modifier = Modifier.padding(top = 5.dp, bottom = 10.dp),
             color = appColors.primaryTextColor
         )
-        AsyncImage(
+        SubcomposeAsyncImage(
             model = item.img,
             contentDescription = item.msg,
+            loading = {
+                CircularProgressIndicator(
+                    color = appColors.primaryColor,
+                    strokeWidth = 5.dp
+                )
+            },
             modifier = Modifier
                 .width(300.dp)
                 .height(150.dp)
@@ -107,6 +116,11 @@ fun MainScreenPreview() = MainScreen(
         listOf(
             ImageMessageRecord(
                 time = 1661698266062,
+                img = "http://localhost:8888/download/img/File3.jpg",
+                msg = "Android: hi"
+            ),
+            ImageMessageRecord(
+                time = 1661698266065,
                 img = "http://localhost:8888/download/img/File3.jpg",
                 msg = "Android: hi"
             )
