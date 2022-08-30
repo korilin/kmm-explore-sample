@@ -5,7 +5,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class ImageMessageRecord(
-    @SerialName("title") val time: Long = 0L,
+    @SerialName("time") val time: Long = 0L,
     @SerialName("img") val img: String,
     @SerialName("msg") val msg: String
 )

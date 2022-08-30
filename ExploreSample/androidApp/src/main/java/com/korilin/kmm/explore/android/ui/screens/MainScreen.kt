@@ -60,7 +60,8 @@ fun MainScreen(
 fun RecordList(
     requireRecords: () -> List<ImageMessageRecord>
 ) = LazyColumn {
-    items(requireRecords(), key = { it.time }) {
+    val records = requireRecords()
+    items(records, key = { it.time }) {
         ImageMessageRecord(it)
     }
 }

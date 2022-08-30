@@ -55,8 +55,8 @@ class OkHttpNetRequester : NetRequester {
             }
 
             override fun onResponse(call: Call, response: Response) {
-                val body = response.body.toString()
-                Log.d("OkHttpNetRequester", "response:: $body")
+                val body = response.body?.string() ?: "{}"
+                Log.d("OkHttpNetRequester", "response:: $body.")
                 it.resume(Result.success(body))
             }
         })

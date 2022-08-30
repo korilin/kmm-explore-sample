@@ -27,9 +27,13 @@ class MessagePoster(
         Result.failure(e)
     }
 
+    private val jsonParser = Json {
+        ignoreUnknownKeys = true
+    }
+
     private inline fun <reified T> decodeBody(result: Result<String>) = if (result.isSuccess) {
         result.getOrNull()?.let {
-            val imageMessage = Json.decodeFromString<T>(it)
+            val imageMessage = jsonParser.decodeFromString<T>(it)
             Result.success(imageMessage)
         } ?: Result.failure(NullPointerException("message is null"))
     } else Result.failure(
