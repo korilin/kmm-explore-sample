@@ -69,6 +69,7 @@ class MainActivity : AppCompatActivity() {
         MainScreen(actions,
             requireRecords = { viewModel.imageMessageRecordsState },
             requireMessage = { viewModel.messageState.value },
-            onMessageChange = { viewModel.updateMessage(it) }
+            onMessageChange = { viewModel.updateMessage(it) },
+            onMessageRemove = { viewModel.removeMessageRecord(it) }
         )
 }

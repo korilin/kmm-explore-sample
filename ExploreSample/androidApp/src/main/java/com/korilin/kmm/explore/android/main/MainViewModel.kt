@@ -25,7 +25,6 @@ class MainViewModel : ViewModel() {
     val imageMessageRecordsState: List<ImageMessageRecord> = _imageMessageRecordsState
     val messageState: State<String> = _messageState
 
-
     fun initData() {
         viewModelScope.launch {
             MessageStorageWorker.initMessages()
@@ -49,5 +48,12 @@ class MainViewModel : ViewModel() {
 
     fun updateMessage(message: String) {
         _messageState.value = message
+    }
+
+    fun removeMessageRecord(messageRecord: ImageMessageRecord) {
+        viewModelScope.launch {
+            _imageMessageRecordsState.remove(messageRecord)
+            MessageStorageWorker.removeMessageByTime(messageRecord.time)
+        }
     }
 }
