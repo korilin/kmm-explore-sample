@@ -8,16 +8,15 @@ import kotlinx.serialization.json.Json
 private const val POST_MSG_KEY_DEVICE = "device"
 private const val POST_MSG_KEY_MSG = "msg"
 
-class MessagePoster(
-    private val requester: NetRequester
-) {
+object MessagePoster{
 
+    private val requester = Platform.requester
     private val baseUrl = REMOTE_URL
     private val jsonParser = Json {
         ignoreUnknownKeys = true
     }
 
-    suspend fun postMsg(message: String): Result<ImageMessageRecord> = try {
+    suspend fun postMessage(message: String): Result<ImageMessageRecord> = try {
         val url = baseUrl.plus(POST_MSG_PATH)
         val result = requester.post(
             url, mapOf(

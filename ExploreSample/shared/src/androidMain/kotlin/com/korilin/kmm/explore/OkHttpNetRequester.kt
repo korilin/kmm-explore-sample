@@ -28,11 +28,8 @@ class OkHttpNetRequester : NetRequester {
         params: Map<String, Any?>
     ): Result<String> {
         Log.d("OkHttpNetRequester", "get:: $url $params")
-        val urlWithParams = StringBuilder(url.plus("?"))
-        for (param in params) {
-            urlWithParams.append("${param.key}=${param.value}")
-        }
-        val request = requestBuilder(url).get().build()
+        val urlWithParams = urlWithParams(url, params)
+        val request = requestBuilder(urlWithParams).get().build()
         return doRequest(request)
     }
 
