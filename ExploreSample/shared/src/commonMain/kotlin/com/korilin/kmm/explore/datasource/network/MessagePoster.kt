@@ -13,6 +13,9 @@ class MessagePoster(
 ) {
 
     private val baseUrl = REMOTE_URL
+    private val jsonParser = Json {
+        ignoreUnknownKeys = true
+    }
 
     suspend fun postMsg(message: String): Result<ImageMessageRecord> = try {
         val url = baseUrl.plus(POST_MSG_PATH)
@@ -25,10 +28,6 @@ class MessagePoster(
         decodeBody(result)
     } catch (e: Exception) {
         Result.failure(e)
-    }
-
-    private val jsonParser = Json {
-        ignoreUnknownKeys = true
     }
 
     private inline fun <reified T> decodeBody(result: Result<String>) = if (result.isSuccess) {
