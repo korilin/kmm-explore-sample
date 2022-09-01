@@ -1,3 +1,6 @@
+import org.jetbrains.kotlin.gradle.plugin.mpp.Framework.BitcodeEmbeddingMode.BITCODE
+import org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType
+
 plugins {
     kotlin("multiplatform")
     kotlin("plugin.serialization") version "1.7.10"
@@ -14,12 +17,15 @@ kotlin {
     iosSimulatorArm64()
 
     cocoapods {
-        summary = "Some description for the Shared Module"
-        homepage = "Link to the Shared Module homepage"
-        ios.deploymentTarget = "14.1"
+        version = "1.0.0"
+        summary = "Shared Module"
+        homepage = "None"
+        ios.deploymentTarget = "15.5"
         podfile = project.file("../iosApp/Podfile")
         framework {
             baseName = "shared"
+            isStatic= false
+            embedBitcode(BITCODE)
         }
     }
     
@@ -28,7 +34,7 @@ kotlin {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")
-                api("com.ctrip.flight.mmkv:mmkv-kotlin:1.2.2")
+//                api("com.ctrip.flight.mmkv:mmkv-kotlin:1.2.2")
             }
         }
         val commonTest by getting {

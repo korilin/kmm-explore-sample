@@ -1,16 +1,21 @@
-import SwiftUI
+//
+//  ContentView.swift
+//  iosApp
+//
+//  Created by korililn on 2022/9/1.
+//
 import shared
+import SwiftUI
 
 struct ContentView: View {
-	let greet = ""
-
-	var body: some View {
-		Text(greet)
-	}
+    var body: some View {
+        Text("Hello, world!")
+            .padding()
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
-	}
+    static var previews: some View {
+        ContentView()
+    }
 }
