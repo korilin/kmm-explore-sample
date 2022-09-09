@@ -1,17 +1,22 @@
 {
   "name": "shared",
-  "version": "1.0.0",
-  "homepage": "None",
+  "version": "1.0",
+  "homepage": "Link to the Shared Module homepage",
   "source": {
     "http": ""
   },
   "authors": "",
   "license": "",
-  "summary": "Shared Module",
+  "summary": "Some description for the Shared Module",
   "vendored_frameworks": "build/cocoapods/framework/shared.framework",
   "libraries": "c++",
   "platforms": {
-    "ios": "15.5"
+    "ios": "14.1"
+  },
+  "dependencies": {
+    "MMKV": [
+      "1.2.14"
+    ]
   },
   "pod_target_xcconfig": {
     "KOTLIN_PROJECT_PATH": ":shared",

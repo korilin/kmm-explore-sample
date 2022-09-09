@@ -12,29 +12,49 @@ version = "1.0"
 
 kotlin {
     android()
-    iosX64()
-    iosArm64()
-    iosSimulatorArm64()
+    arrayOf(
+        iosX64(),
+        iosArm64(),
+        iosSimulatorArm64()
+    ).forEach {
+        it.binaries {
+            all {
+                val moduleName = "mmkv_operator"
+                val mmkvPath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/$moduleName/build/Release/MMKV"
+                val mmkvCorePath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/$moduleName//build/Release/MMKVCore"
+                linkerOpts += listOf(
+                    "-F$mmkvPath",
+                    "-rpath", mmkvPath,
+                    "-framework", "MMKV",
+                    "-F$mmkvCorePath",
+                    "-rpath", mmkvCorePath,
+                    "-framework", "MMKVCore"
+                )
+            }
+        }
+    }
 
     cocoapods {
-        version = "1.0.0"
-        summary = "Shared Module"
-        homepage = "None"
-        ios.deploymentTarget = "15.5"
+        summary = "Some description for the Shared Module"
+        homepage = "Link to the Shared Module homepage"
+        ios.deploymentTarget = "14.1"
         podfile = project.file("../iosApp/Podfile")
         framework {
             baseName = "shared"
-            isStatic= false
-            embedBitcode(BITCODE)
+        }
+
+        pod(name = "MMKV") {
+            version = "1.2.14"
+            moduleName = "MMKV"
         }
     }
-    
+
     sourceSets {
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.0")
-//                api("com.ctrip.flight.mmkv:mmkv-kotlin:1.2.2")
+                api("com.ctrip.flight.mmkv:mmkv-kotlin:1.2.2")
             }
         }
         val commonTest by getting {

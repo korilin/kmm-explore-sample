@@ -1,6 +1,6 @@
 package com.korilin.kmm.explore.datasource.storage
 
-//import com.ctrip.flight.mmkv.defaultMMKV
+import com.ctrip.flight.mmkv.defaultMMKV
 import com.korilin.kmm.explore.model.ImageMessageRecord
 import kotlinx.serialization.builtins.MapSerializer
 import kotlinx.serialization.builtins.serializer
@@ -11,7 +11,7 @@ import kotlin.coroutines.suspendCoroutine
 
 
 object MessageStorageWorker {
-//    private val mmkv = defaultMMKV()
+    private val mmkv = defaultMMKV()
     private const val storageKey = "MessageStorage"
 
     private val json = Json {
@@ -25,7 +25,7 @@ object MessageStorageWorker {
     private suspend fun <T> opt(block: () -> T) = suspendCoroutine {
         val result = block.invoke()
         val value = json.encodeToString(cache)
-//        mmkv[storageKey] = value
+        mmkv[storageKey] = value
         it.resume(result)
     }
 
@@ -34,7 +34,7 @@ object MessageStorageWorker {
     }
 
     suspend fun initMessages() = opt {
-        val mapJson = "{}"
+        val mapJson = mmkv.takeString(storageKey, "{}")
         val messages = json.decodeFromString(
             MapSerializer(
                 Long.serializer(),
