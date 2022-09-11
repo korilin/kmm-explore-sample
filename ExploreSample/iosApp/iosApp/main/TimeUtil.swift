@@ -10,7 +10,7 @@ import Foundation
 
 
 func formatTime(timestamp: Int64) -> String {
-    let interval:TimeInterval=TimeInterval.init(timestamp)
+    let interval:TimeInterval=TimeInterval.init(timestamp / 1000)
     let date = Date(timeIntervalSince1970: interval)
     
     let dateformatter = DateFormatter()
