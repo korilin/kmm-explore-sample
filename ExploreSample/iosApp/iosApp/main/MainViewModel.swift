@@ -14,8 +14,8 @@ import shared
 class MainViewModel: ObservableObject {
     
     @Published var loading: Bool = true
-    @Published var message: String = Platform().devEnvLocalHost
-    @Published var records: [ImageMessageRecord] = Array()
+    @Published var message: String = ""
+    @Published var records: [ImageMessageRecord] = []
     
     private let repository = MessageRepository()
     
@@ -47,6 +47,16 @@ class MainViewModel: ObservableObject {
             let record = try await self.repository.postMessage(message: self.message)
             self.message = ""
             self.records.append(record)
+            try await self.repository.insertRecord(record: record)
+        }
+    }
+    
+    @MainActor
+    func removeRecord(index: Int) {
+        runCatch {
+            let record = self.records[index]
+            self.records.remove(at: index)
+            try await self.repository.removeRecord(record: record)
         }
     }
 }

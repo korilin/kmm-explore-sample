@@ -1,4 +1,7 @@
 PODS:
+  - Kingfisher/Core (5.15.8)
+  - Kingfisher/SwiftUI (5.15.8):
+    - Kingfisher/Core
   - MMKV (1.2.14):
     - MMKVCore (~> 1.2.14)
   - MMKVCore (1.2.14)
@@ -6,10 +9,12 @@ PODS:
     - MMKV (= 1.2.14)
 
 DEPENDENCIES:
+  - Kingfisher/SwiftUI
   - shared (from `../shared`)
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - MMKV
     - MMKVCore
 
@@ -18,10 +23,11 @@ EXTERNAL SOURCES:
     :path: "../shared"
 
 SPEC CHECKSUMS:
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
   MMKV: 9c4663aa7ca255d478ff10f2f5cb7d17c1651ccd
   MMKVCore: 89f5c8a66bba2dcd551779dea4d412eeec8ff5bb
   shared: eb1f480a0526f0851a0e4a737064359ecc04f1f1
 
-PODFILE CHECKSUM: f282da88f39e69507b0a255187c8a6b644477756
+PODFILE CHECKSUM: e1062a678bbaac1532772672f29e0318eb70ee7d
 
 COCOAPODS: 1.11.3

@@ -14,120 +14,185 @@
 				21E32D1B9646EBBA109EE96E5888C04D /* [CP-User] Build shared */,
 			);
 			dependencies = (
-				7563ABA5C4C186B0F4ABB57CF4853767 /* PBXTargetDependency */,
+				9880B0FDBDEF9EE6EB24239E71341C9D /* PBXTargetDependency */,
 			);
 			name = shared;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0478D2213A2119998DDDD13D41847DC0 /* openssl_aes_core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92432A88F8275E5E8F6A03D97214A035 /* openssl_aes_core.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		08CDBB15566590219C091588F9F16F02 /* MMKVCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C83BFE895D1B0EA3832F4D327BEF8959 /* MMKVCore-dummy.m */; };
-		0F2A2F407B5608929A82C4F809DB6DEA /* MiniPBCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2158F824E1912ED124597E53B1B57C /* MiniPBCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		136C83E8CDEEF9A59A0AF4F92E75859B /* openssl_md5_one.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90083D637DA1ADE1E6987F0BA0A1B74C /* openssl_md5_one.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		1CE00779AD5A0F16703515D601288F0B /* MMKV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 24F21975DC79289239987B27FABDBD42 /* MMKV.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		1FF6594E51B845C1BA698119B2886E49 /* KeyValueHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9F89F00CE8BDE21D03DCC1D6AF7DED /* KeyValueHolder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		24B00B14D7E93BF6F48485B469A925C9 /* MMKV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4ED5342846E3C20C227C574BE5C6A0 /* MMKV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2642286359E9873B7C05049D566C25EA /* MMKV_IO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CAF1B0DE3CBE839F8D56922AB99A0A3 /* MMKV_IO.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		2EB05D2733C9B0F167ABA8DE8F90B9E7 /* AESCrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 556B70D922C173020EB617AACA9B460F /* AESCrypt.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		34E0C6B90DE94B36155B14479D784CF3 /* openssl_aes_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EC1D2C89D859AC795D671A5B0A5366B /* openssl_aes_locl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		455168460203D54E2A84F898475412AA /* ThreadLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5763C0EB03DC12D6B7853AD989241B76 /* ThreadLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46D45E238B10BD1A617673DDA1BD8CCC /* CodedInputDataCrypt_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 20B60278100CBD92AF5A55A81245E7A3 /* CodedInputDataCrypt_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		49A261CB241970A8C9ABE296399AE106 /* MMKV.h in Headers */ = {isa = PBXBuildFile; fileRef = BA8BD874590BF8E42CD036B1DBBBDF3D /* MMKV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A59889B815A4711C2276454FA35758D /* MMKVLog_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8052FD1702C4C78CFBBD798ECF61ECD7 /* MMKVLog_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		4EE300735D32C734809D067F2BED1721 /* PBEncodeItem.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 080E06AD063E329F6B75CC7417BB7600 /* PBEncodeItem.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
-		4FA1F34052D530AA6798490FDE1C5DBE /* CodedOutputData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B24C60518DCDEE7B313B83B5A3BB5EF /* CodedOutputData.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		50D953692D63E5321EC2D959F9EABA1A /* MMKV_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 358629785AB8B48F427AD00FA3768E20 /* MMKV_OSX.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5249C0561C035BC9BC918C1B30737BD2 /* ScopedLock.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0D064B528B2266444AD0BEDE12F85D1C /* ScopedLock.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		55A278C7DA1F7EE27F5063CD80BD462B /* MemoryFile_Win32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35660BD6027C06E7CD92429E00ACC239 /* MemoryFile_Win32.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		577AE73860C448FD6E3B456B438F342D /* openssl_opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C1E59B3556FACAF00AF10892C743FE2 /* openssl_opensslconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A058E3853550903FA77942468B684AA /* MiniPBCoder_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCDB659DEDDE7BA02FC4C040656C0C78 /* MiniPBCoder_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		5F4B42754031DBDC4858F1678C6C8103 /* MMBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EC4651827D08DC1AC6955FE7DDB7A726 /* MMBuffer.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		5FC1B0E3ABE1A6C175F5DD695D193BBD /* CodedInputData_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACEDEF71FCCAB9B97853E9934A8B1DC9 /* CodedInputData_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		60128F7A9CB52198368A683BC19805D8 /* Pods-iosApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F87A626222A8D9B26448A9FEB04FD0DF /* Pods-iosApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61934F2757BD67A2FA227DF11BC7DFB8 /* Checksum.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D9CFDF12CC42F45D5441B5D6DA2CE3 /* Checksum.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		62B60040B8D4B531A7233715658348D0 /* MMKV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 441F194B8F9815BBC09CC75B171D60B4 /* MMKV-dummy.m */; };
-		65FE362134DEB0835A5BA2C02DC5AB52 /* ThreadLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A86418F5A2B652A685AA7C17D045D0C /* ThreadLock.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
-		677A07D691611DB8608952044F3F3915 /* MMKVPredef.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF5A8EDED0799A02E38EB98EE368BC3 /* MMKVPredef.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A202FC760F76573890F7786FF62A1EC /* MMKVHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 38C10C2F7BABA23B478512E03FD0E8E4 /* MMKVHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A412AD6971C8AC96A36AD31D66FED03 /* openssl_md5.h in Headers */ = {isa = PBXBuildFile; fileRef = F2194DD7A435F4E30B2144845F359454 /* openssl_md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7275F2B59BBD1C347850E9D54AC5A01B /* MemoryFile_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23F02FA3E51162C1DDC667B01B9C3918 /* MemoryFile_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		76E1CC65B4A9E1C3CC1884A61FC07A95 /* CodedInputDataCrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39479E0EC9D30F1688546FB5B4B63377 /* CodedInputDataCrypt.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		7A8B00E1DD889E73F388AA54CD80C9F1 /* AESCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = C348C0BDD7DC4425A1A2F2444BF86661 /* AESCrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7D0C1026CDC36DEDC546F0EB4DEE972D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D6FFD0A2A010AF218F5734629C73B6 /* Foundation.framework */; };
-		8200C24A4C3DDAD66F04C8C9A15E7151 /* openssl_aes.h in Headers */ = {isa = PBXBuildFile; fileRef = E09CD10F5156F907E952F010D7699B1A /* openssl_aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		84D09FA4D115DDD38AA0094FDB336038 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D6FFD0A2A010AF218F5734629C73B6 /* Foundation.framework */; };
-		8919995A195166B6164EE1F5387460F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2C44D1A47564D02956A30E0C81D407 /* CoreFoundation.framework */; };
-		89C888343E2D3DE2B1C73B46B00B6579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D6FFD0A2A010AF218F5734629C73B6 /* Foundation.framework */; };
-		8BC013E538C5C1E394A9E6F91590956F /* MemoryFile_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69927B903EAE3DD56BD5ED102FE314FA /* MemoryFile_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
-		8CFA333D09818F63038A5C0EFDACBA07 /* MMKV_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 885AA493B1D5728259334D31B2E06E9A /* MMKV_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		8D49069A73C555472F48FA24382A24D1 /* Pods-iosApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DC7F9924F99FEE67A9AD3BEE09A10C /* Pods-iosApp-dummy.m */; };
-		8DABD2B70E2D4B63E55F38696034DEE8 /* MMBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 74FCAED5A504CE87844E1C91E8AA80AD /* MMBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92F562D8470E3EC32D1CCE6FB04AB2EC /* openssl_md32_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3BF22A7E6FEDC402F64183C6100E8F /* openssl_md32_common.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		97741EBA7BD4FF28E29F6B3CE4196580 /* CodedOutputData.h in Headers */ = {isa = PBXBuildFile; fileRef = A7CAA4D11EB62EEBEA4939B488925B67 /* CodedOutputData.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9E8D189DEAB0DC81EF19BFE9BF6AA66B /* InterProcessLock_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4875D4843B9968DD9471DD58EF7E61F /* InterProcessLock_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		9F48DF9FEDD3D701DC65AE7BDF16F6CB /* PBUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F7B9F6F17F5595C47783833AEA8EADA /* PBUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1DC4CB6CE163627CE2213B5BEB18199 /* ThreadLock_Win32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48078B926FF245FB3799F5DEBF63B3F5 /* ThreadLock_Win32.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		A25CC1730DA19189B81F87C0521BCD25 /* CodedInputData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852E4B0B21E665FA21B32A7416C4CEAF /* CodedInputData.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		A29DF5D7D1D0A4DFAC2760038BCF67B2 /* KeyValueHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA3691EC786D57AB153F35187AA86079 /* KeyValueHolder.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		A37BC4689CB4785952F0E3F757DC0158 /* PBUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7CBC8976BB0D3B09C8E17D78DD93DAF /* PBUtility.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
-		A63ED8AB2EA0A0A1FCBD7A6126F7AF4A /* openssl_cfb128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F259D321208F8048951777F524AE3FA /* openssl_cfb128.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		AA8488DC4DF069F946515A641075D1AC /* libMMKV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6F88F12CF57327CB53D78DBC1F958AF9 /* libMMKV.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B3C79668A49808B49EBCBA35B3FC0753 /* CodedInputDataCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 273EB56BD8C4AC4A10CAB0464EABFA03 /* CodedInputDataCrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B8C1560E1EEB59330FBE499736667A3A /* MMKVMetaInfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3D3B8014933E8D48F71F777DA8A49AB7 /* MMKVMetaInfo.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
-		B9B45570BC5BD1DCF7077EA1E23F0BD8 /* openssl_md5_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A5AAFCF14D22841FCE55FB198BC283 /* openssl_md5_locl.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BCAD88827C66EA365BCD423B76348539 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2C44D1A47564D02956A30E0C81D407 /* CoreFoundation.framework */; };
-		BF2BAD14CDD12ECB96978E81AB02B8DA /* MMKVCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB4BDA766D0F4FD0C461F07C704A8DE /* MMKVCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C0C923827A7F4838393204AF8C6C4EA4 /* MMKVLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56332C5E96C2B64FCF5AE14AF8A42AC4 /* MMKVLog.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
-		CB604E7A9016BA4B2F258B1625F85923 /* MemoryFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B5B1076B0F0513763148EEBBEB09B80 /* MemoryFile.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D1026F3F90D929EB268E8FC98ABB678B /* MemoryFile_Linux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AE9AC026E53F57DBF0C2040176FB56D /* MemoryFile_Linux.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		D77149FDA6895D6662DB55B7FADBC87F /* openssl_arm_arch.h in Headers */ = {isa = PBXBuildFile; fileRef = A5CA1EC73B489D8A71E737C8FF7D2CCF /* openssl_arm_arch.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E1779F090AB8A44197ACEF4CB8FFBC7D /* openssl_md5_dgst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F05C227493AEF53FDF8FD8ECFBD896B /* openssl_md5_dgst.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		E2C859433206E9188B3FB5C53C7B416D /* openssl_aesv8-armx.S in Sources */ = {isa = PBXBuildFile; fileRef = 0B8FB9216A654E3DC4B0250C7E0C3EC2 /* openssl_aesv8-armx.S */; };
-		E438EC943A23021B66652013F7675A7D /* InterProcessLock_Win32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41B0A424786AB5DF30EB281AA17CFCCE /* InterProcessLock_Win32.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		E5DD6F657F58C1F5EF5DECA058B61D17 /* MMKVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5556F5E5788DBD18642119B992EB362E /* MMKVLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6A13FBCFAF202914860992C73E58280 /* MMKV.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A210CAF5AC53C89B2983A4E497128F4 /* MMKV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E70FCBC3B529D3B33830E26860330353 /* openssl_aes-armv4.S in Sources */ = {isa = PBXBuildFile; fileRef = 74B93E121865C4E06FBB4AE08D78B15A /* openssl_aes-armv4.S */; };
-		E792400F64716BDE8C6C2F9FD319C5CB /* MemoryFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7FB198B4FAC305CB1F2F55E3055CC814 /* MemoryFile.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
-		E876106D1681A90BDA60770949DF6FA8 /* InterProcessLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C97DA7F8B3023DAAA2BCA7766388FE8B /* InterProcessLock.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
-		EE3F736CFB739E108324DFF49F9C13DB /* MiniPBCoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23D03C4F5EF25B4A15712DDED423CC6A /* MiniPBCoder.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		F4E4E90648441123E22580C55F5302E0 /* CodedInputData.h in Headers */ = {isa = PBXBuildFile; fileRef = ECED935591797B429CBDA82C86D9936C /* CodedInputData.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F9FB780FCD99AC6B6014DA80387FA3EE /* InterProcessLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E82853BC38DF1945453E8BD52C1FD29 /* InterProcessLock.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FAC67972DED2C54A4894352DE44275D3 /* MMKV_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 890144D6DC40251AECBB932ED593BA90 /* MMKV_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
-		FC4ACFA488C931F47B45D61880D39BDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6E19D30E2E7A65C1612CAABE59CC01 /* UIKit.framework */; };
-		FFF602D9485E5B43DC99624725828EBF /* MMKV_IO.h in Headers */ = {isa = PBXBuildFile; fileRef = 09246CC381E7811DCB4EDBD8FD0C9B0C /* MMKV_IO.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		051C4DB01D3E5D8B81CDC3884E34047D /* CodedInputDataCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 62158FA7FBD85D620B01436EB90C88E9 /* CodedInputDataCrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0951211B9D35E2FD51B9B83B15CABFF9 /* GIFAnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F2618A772FAF365954C2006CA2C232 /* GIFAnimatedImage.swift */; };
+		098DF1052657717ACF953A92B3F6E7B0 /* ImageDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DDF83FCCCEFB1FE9E67744EA7CD69E /* ImageDownloaderDelegate.swift */; };
+		0BE186032123A1253AF467135FCEF4EB /* MMKV_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = A949B4AB347DD7068E30039A0E07DE6A /* MMKV_OSX.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0C04E5D23D8493BD6C7DC54E23535A5F /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A57DDEEDD71A25ABB75BCFE7F3988E0 /* ExtensionHelpers.swift */; };
+		0C4EF30069CD11D8BCF388D9CB46521A /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD38F2EE0A94E7516EEDDF5CD3F427 /* MemoryStorage.swift */; };
+		0C9C834BDB19F984933ECC83E8264B96 /* openssl_opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3F1D7B5D0ED87142C370A5ADA2C986 /* openssl_opensslconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F3384B00E5BBBBE60AF9C91EF36B745 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446075C223348CCA62B5D33E7AF23C85 /* Box.swift */; };
+		0F418628969A68F2DB300575CB0F0404 /* openssl_aes_core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E52E3A59E2282016B8D9144E61CBEF1 /* openssl_aes_core.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		107A28EB546D04115F1A06CCAFB2ACD6 /* ImageBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8A55997E4640D7347F7FEBC49A5DC6 /* ImageBinder.swift */; };
+		11E04B991E5F80E31DF0092FD5E9F5A8 /* MiniPBCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = F7CBE736A4BBB4F90D725A47977357C6 /* MiniPBCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		127A600063D04D1625F4B66EB430A65C /* CodedOutputData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92D1842BDB23DBFFE644654AB5245AFD /* CodedOutputData.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		12F6B754C2DE3BA34697BC55440A7280 /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9375FF1BF79BFC48B3E9F81C91DB80D /* Kingfisher-dummy.m */; };
+		1962578E88916DC0D8626A49CC289522 /* ImageDataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D025DF62E4FFA31D10E048E3CE887E /* ImageDataProcessor.swift */; };
+		22B87B0ABB439B7BEE4472883ACAFC5C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241798BD68CBB7C5FEA207DABDEDF3AA /* Storage.swift */; };
+		24B00B14D7E93BF6F48485B469A925C9 /* MMKV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B7F18BFDFC7ECBD6AE62E68223F8C41 /* MMKV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2781E32E615BC3765D86EECA82DC5417 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF38E3EA676A2F6C1CFACB4A13903BDA /* DiskStorage.swift */; };
+		27DEF194338AE8758F477B610F13DB92 /* InterProcessLock_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C10C2A6D4661A05AE5564A94BEAABC52 /* InterProcessLock_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		2903DD23BE3206DCDDD4A670F868A12A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41E58EAA35E435AA6C23C1B01686CF50 /* UIKit.framework */; };
+		2B3CCBC0B2D345A8F9747F2EE694575C /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332F665312EBEC0AFAA494966731F1FA /* Deprecated.swift */; };
+		2D7824D1B6FE905781D0661519711BC7 /* SizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0449C22108FB4414396876894DCDE0 /* SizeExtensions.swift */; };
+		3193CB7904F1EBE03DEFF97E1BD7EC2E /* openssl_aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 258259E5E1B1D0DDE01F2750B35B06FE /* openssl_aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		33B2D973628B2A4192841B455B35C054 /* ThreadLock_Win32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4EF8C5A69DDE68A3C6DC418A936902E3 /* ThreadLock_Win32.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		34CCAB609C7C333A0C055991ACE70941 /* CodedInputData_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AA8D115646AD751911304A983B355B4 /* CodedInputData_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		35B403E7FC9272011F2EBF0D78F10562 /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = 606A009DE236F369B58E35A680C0915B /* Kingfisher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3684CF2A5950F1953C3272ACD34D8EF3 /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104369CA36EC9976BB0D63E3785C1A4 /* ImageFormat.swift */; };
+		36C23D34783E1A01F073BA4EEA0E30C1 /* MMKV_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84CB13C6082A972B2FC970F7B3200D99 /* MMKV_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		398B7AAF46E6934A75BACD8DC9221492 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B53893CE13B44D9A5BFE647E06C0FE /* CacheSerializer.swift */; };
+		39BB782A95CC86E0464004A0B8CFF3A3 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ACEF1E9176DA2D7BEAC726A6D89604 /* ImageTransition.swift */; };
+		3BFD1B3957FFE04A1681E546BE929BB9 /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCEB888B44E2D734FE3A5C4317AB56C /* RequestModifier.swift */; };
+		40C49C47754D746EB5A36AFB6B56FFD1 /* WKInterfaceImage+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD2AC1ECA7F5C077B8FC81D1B2537B /* WKInterfaceImage+Kingfisher.swift */; };
+		40EC9BD89212118167DE586E7E92F36F /* CodedInputDataCrypt_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21485F429711E19AB770A2548C8740B6 /* CodedInputDataCrypt_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		43D96052F6B2F9B2EE7E2E5054B294D2 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146924D97C8643F92A23065CB3C88215 /* Resource.swift */; };
+		449BF5B454DF3A5699961A611AC3B4AB /* MMKV_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9440FF996E0D9724F107DF0615054008 /* MMKV_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		481D28A06FD6CDE4FB51C55D8479242C /* KFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618EBA7992DFCFEA58BBD17C4A93123D /* KFImage.swift */; };
+		493723BE23B91AAC551EF6C4B23C8BB1 /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 23AC6480D879E84208E1188D3FE20929 /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B118B628C3E9E2A88500CDFA8A2CBA2 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7C056832B6332AF489B68136E251DE /* Filter.swift */; };
+		4C6A00CB18CF4127BA9B273F99D1B9AE /* MemoryFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B0178FA22351464F0CB9C0CAA8BACE /* MemoryFile.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		4D5A9D2E06341AB81386B2C644A13BC1 /* MMKV_IO.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C608425240D1563406C39520DE6FFBD /* MMKV_IO.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4F8624542F01AF5E144E718E8523617C /* ThreadLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAA4023F8D5591C87C69C73393EF25F9 /* ThreadLock.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		50B37D2BD3DD657EBCD09AC7DFEB351A /* PBEncodeItem.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E6F72298DF477CDA9FE58305ABA2EFDD /* PBEncodeItem.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		5114672D9459D80D164E0B719CBD2868 /* MiniPBCoder_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30F063E81AEAE2C596247242EB2655CD /* MiniPBCoder_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		532841F086C2BCED8040E58F7B2A57BF /* KingfisherError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186478D676E12DCD7C95A3C156863BAD /* KingfisherError.swift */; };
+		551B5D47AAE4959BD508CF97469A40C9 /* NSTextAttachment+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FF8F48B1772C42BE9DAD2ACBD6381 /* NSTextAttachment+Kingfisher.swift */; };
+		56A68C3AA2C5E92510D2D0A4980E2612 /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08F620DB0466EC106649321BB28359C /* ImageModifier.swift */; };
+		585BC8ADEB492E9BD406A819E5A69BCE /* Pods-iosApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F87A626222A8D9B26448A9FEB04FD0DF /* Pods-iosApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59A4A2087B1AA854A183DB108C76D4A2 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADAC86F342F15B8FD006CF8512DFF43 /* AnimatedImageView.swift */; };
+		5A6E3953D7043133044D0D461907DD5C /* openssl_cfb128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDADF614D83AFFEC7CA0FD2733C94A9A /* openssl_cfb128.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		5D668C05B3E47AF6602AA148611EFB95 /* openssl_arm_arch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FD81CA8488DF407A2D10CD18EEB1DAF /* openssl_arm_arch.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5EE1FC0AD1E7539979406E33C3DB612C /* KeyValueHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F95634157DE54D2B92F07FEAED2601 /* KeyValueHolder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F2D0462483CC21C3C7624BE4FFCDDAA /* openssl_md5_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = D7AEECA46B6C7E5B2B3EB692B4DD038C /* openssl_md5_locl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		62B60040B8D4B531A7233715658348D0 /* MMKV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFDE1F43DF7F7139D4AD8A7FFE76F2F /* MMKV-dummy.m */; };
+		65CDD7263A7F38CD1C3A6450F68F2567 /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D819653064E753187460165121A6DE1D /* UIButton+Kingfisher.swift */; };
+		69C803BC3DDC70F315F16BB6D1B99CB8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D894EDA90C4D43A795E5050BBEF2782 /* Result.swift */; };
+		6A202FC760F76573890F7786FF62A1EC /* MMKVHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4C1141DE3DE26C65164DBFDEB3A611 /* MMKVHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ABEB6C322BD53141A2B2B7A97A66CEC /* MMKVCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10D74522B944AC21A32A7135545543BF /* MMKVCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BBEEEB3412E95F6485A88F2725ECC79 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370DFEB44F253F326AA4BEFD23F9658 /* Placeholder.swift */; };
+		6CF7B38133FEFD6610972F085D2CEAE6 /* AuthenticationChallengeResponsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22CD1CA71E8B4336E549A7D4531F930 /* AuthenticationChallengeResponsable.swift */; };
+		6DFD4BACE67081E44FF7A1FD214F4FBD /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9975B5920B64BC86B4DD1162866926FA /* Kingfisher.swift */; };
+		6E3112D2AD2B25B98117C8E9A5463442 /* openssl_aesv8-armx.S in Sources */ = {isa = PBXBuildFile; fileRef = 3B31166F241E96D40F8AD2CEB7DCCF34 /* openssl_aesv8-armx.S */; };
+		6F9E88C218834EF5551273069B9483CF /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C37ED3FCE04E0E1463E43C8F908C32 /* KingfisherOptionsInfo.swift */; };
+		72429CBDA284C99C52130D11726262C9 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7566DA34765D1BB8AD7B544FA37002 /* Runtime.swift */; };
+		77276875F5BFB8B09C05AF5067E03E91 /* NSButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83456250F7EC6475E46ECCD02391C207 /* NSButton+Kingfisher.swift */; };
+		77427444CB3204F2E16E7E3ADC63D50A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7EE12A94A69CFA7292D0E59FF0B2B2 /* CoreFoundation.framework */; };
+		79A04131E776D7ED51D429A77D9966FF /* MemoryFile_OSX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F06F5D49A1EEB58E3FDF9FD63146027 /* MemoryFile_OSX.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		7C771CA7D01B678FE2090CFE859A966A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F366AD95C946C53E0879FF0CD217512 /* Foundation.framework */; };
+		7FE3E2F3D8661627239A41A17FE097C6 /* RetryStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A4493619187E261832773BFFD78A07 /* RetryStrategy.swift */; };
+		82661CB4C1A218830A0819B9CE79FD8A /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE92757E46D951887D6427F9E587B9B0 /* ImageProcessor.swift */; };
+		8434B8ADFB06E007D9BE7E376720E028 /* ThreadLock.h in Headers */ = {isa = PBXBuildFile; fileRef = A4275654C3C056E5532AEF426568B1C2 /* ThreadLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8608521C36D4A31E295D27777814F0A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F366AD95C946C53E0879FF0CD217512 /* Foundation.framework */; };
+		8919995A195166B6164EE1F5387460F1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC7EE12A94A69CFA7292D0E59FF0B2B2 /* CoreFoundation.framework */; };
+		899E31C4584591A2AD2F7940B2753F81 /* ImageProgressive.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA1310ABCCB32DB3428B549EADA1BFE /* ImageProgressive.swift */; };
+		89C888343E2D3DE2B1C73B46B00B6579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F366AD95C946C53E0879FF0CD217512 /* Foundation.framework */; };
+		8B9AB5C14DB52933EE9B8CE7E02E98D9 /* ImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766E03B46C615B07585947E8AA152D83 /* ImageDataProvider.swift */; };
+		8C213D265138786E03EC8232DD62FD01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F366AD95C946C53E0879FF0CD217512 /* Foundation.framework */; };
+		8F5E5A20FB27220EE6A3F9342C6B4CDB /* MMKVMetaInfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 452B85921374987A3CF03CC8849CC3C8 /* MMKVMetaInfo.hpp */; settings = {ATTRIBUTES = (Project, ); }; };
+		8FFB147303945177933AD3182615E76A /* Pods-iosApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54DC7F9924F99FEE67A9AD3BEE09A10C /* Pods-iosApp-dummy.m */; };
+		9142FF167AB1AE2D132509A678A083E6 /* openssl_aes_locl.h in Headers */ = {isa = PBXBuildFile; fileRef = 95FFA23D498ED02F17007D1655B0A16F /* openssl_aes_locl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92DE7F6A523333DBB38A65EC221EC018 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41C61AD6A879062F28E4D905BC8E094 /* CFNetwork.framework */; };
+		959F68102EDF703F7EE11AD9E6057888 /* CodedOutputData.h in Headers */ = {isa = PBXBuildFile; fileRef = A97CB3EA0D0B3849820FB403610F6DA6 /* CodedOutputData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9890E56FFC29C35E13E0B0CC3FA0777F /* MMKVLog_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B4F295EFBD5F967FA197D639E6CEBF2 /* MMKVLog_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		990C09669490CC02149832C301B8E84A /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B7C8D6B19EA3453617FB2ACF5D3721 /* CallbackQueue.swift */; };
+		9C106A45EE400E7D03B16480F9F7B51C /* CodedInputDataCrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4D9ACCD8CC8C60915375F905AEF0574 /* CodedInputDataCrypt.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		A14EA62771888561A09A1BC00B3E6B29 /* MMKVLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D356AC258488CBBC4669A531CD50942 /* MMKVLog.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		A28A38A5879DC068C879A4E3436BE79C /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BB419790E5AE06482A9061B441494C /* FormatIndicatedCacheSerializer.swift */; };
+		A359423A72FA365E3D80879029120ADC /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BF1EFFD7A2BBC409854AE66CE105E4 /* RedirectHandler.swift */; };
+		A5DDD9EA715BB84720239CA16B9128A6 /* MiniPBCoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FAFE0AE6DAEC364788D459CA3238B2F /* MiniPBCoder.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		A75DBB735E37FF47FCD0C063BB59288C /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F290CE75B5FEB37ABCD17E4A01E280E /* Indicator.swift */; };
+		AA8488DC4DF069F946515A641075D1AC /* libMMKV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 95185A35FC665FA57CF47F0388DC3228 /* libMMKV.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AEEE227D932A5AF668E547E232B1B8D7 /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37CC602715BEE2C816CED07A678357E /* SessionDataTask.swift */; };
+		AF49049493CCA5472745B0F2AB7DCEBC /* PBUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AB4A786FE3270438B5790BB49197935 /* PBUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B264FE667D66D9F9FDA72246FB81D67E /* AESCrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BC2FF6A91899E5C32F64B16EB8D7621 /* AESCrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA36C0E9370B15FF54A1B21C6808CD0D /* PBUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87CAE6BA979B074CEBFAA58FE0329E2B /* PBUtility.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		BC0A0F30E960D5FF00A1E67A864316FA /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB768A7E59A5F8C8BE4A499872806CED /* Source.swift */; };
+		BD98539C1B06E6F43BFFE2487EF0E6A2 /* MemoryFile.h in Headers */ = {isa = PBXBuildFile; fileRef = F2113DEB5DC943796D103019D2D3DB0A /* MemoryFile.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C29C517A0440C8C4E0F31A521A99B1FA /* MMKV.h in Headers */ = {isa = PBXBuildFile; fileRef = 17CFE1B9B0E407E203FE077B20E75490 /* MMKV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3A7B9C94303B14367B0DFAAD9F8E806 /* CodedInputData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CDD4A806F759700D27D2FC645BA3F9A /* CodedInputData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3CEB5A53E35178E08971038C7795D97 /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322C6972BC43027922D22B90315380B /* ImagePrefetcher.swift */; };
+		C6E38F4448308A3705264846D49FDB93 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A4F197351910A7EF02072168BB89C2 /* Image.swift */; };
+		C8906866853EBA15B983AF444C9C65AF /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EE539A5E86AB502E9AD571B41E7AFE /* ImageCache.swift */; };
+		CABE44703FBEBE1D96DFB0F2493846A3 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292F518B91F4F768595255682839BF56 /* String+MD5.swift */; };
+		CB3502259E16D23A33F708824B64937B /* MemoryFile_Linux.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4163988A539ACAB14035F2BFD3516B9B /* MemoryFile_Linux.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		CEAE50C20C8DBB0F40455B0EC82AB5B6 /* openssl_aes-armv4.S in Sources */ = {isa = PBXBuildFile; fileRef = 080D7D9AF3060473AB59AC52115CE109 /* openssl_aes-armv4.S */; };
+		CEB9F408A7A7681BFACDAEA944718918 /* AVAssetImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FA980D1CBBB27D699CBB96BBA3BBD2 /* AVAssetImageDataProvider.swift */; };
+		D12DD90E0C8B8E6450C9188E60C0B518 /* MMBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = E7963C47246DC5730857D264B2297779 /* MMBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1569E02F41A19E035D35A3EBE592E52 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354091CE4A694C5A675CECCBB082BED /* SessionDelegate.swift */; };
+		D15F76E7BE265287E3C0992BC65AC34E /* openssl_md5_dgst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3C6582B7B43F27031CD10C113060B17 /* openssl_md5_dgst.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		D1BAF9C423177ED0F8B17A53DFAF7DCC /* InterProcessLock_Win32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56AD3F6400DFF88DBDBBD5F2E257CC15 /* InterProcessLock_Win32.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		D3AB8E74601833697D8CC70C9D6C6665 /* CodedInputData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4B4B2F3AF8E57D5E0914BE5647E11C8 /* CodedInputData.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		D40A14BBF87CB5634D61EDEAF6E0B5D2 /* MMKV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BB82BB780B4235250580C3BC7590A4F /* MMKV.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		D69856385559F36E79720C0EE60A3D5E /* MemoryFile_Android.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD6AC32067275617C371356699C029B9 /* MemoryFile_Android.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		D8A12374F09D5683E9E5714C880D4564 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F139BF31BCF7F31D021BEFDFAB8EB760 /* ImageView+Kingfisher.swift */; };
+		DC2007FC7D626C1E875E803F9CA8D0BC /* MemoryFile_Win32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D0260BA2AC2A4C9463CD58DAD8F3B7D /* MemoryFile_Win32.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		DDA06C187181D5D109315A62561F6E08 /* KeyValueHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 014CE5F3AC2E0AB8EDF3B34139C5DDD4 /* KeyValueHolder.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		DDB4BAEE922C784361C336D822DCCB20 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4924D5A03A240C840D55C60C6ADCE23A /* Accelerate.framework */; };
+		DF1BE54D3896116F9FE82E71315B7540 /* ScopedLock.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5EF688A25F52F654EEEAACEDEAEE231B /* ScopedLock.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0A34EF936A571977A2A54405AD717A6 /* AESCrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75DDBC2D442A66C1C6F9A2742C604B2F /* AESCrypt.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		E2E48BA6BE1A08EDD702A26A4CE9A7F9 /* openssl_md32_common.h in Headers */ = {isa = PBXBuildFile; fileRef = C871B407E8916EC3F4B955F3C769E506 /* openssl_md32_common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E3079409DCD6395DC8BD6F8947608BD7 /* MMKVLog.h in Headers */ = {isa = PBXBuildFile; fileRef = ACE828AFE92F3B052383F41B53B35598 /* MMKVLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E35DA34892AB440B8862B08B10035C99 /* Checksum.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D3D335E5EA20BBC841C1E4E42B5509 /* Checksum.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E6A13FBCFAF202914860992C73E58280 /* MMKV.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0D06D4E880C1AB81202A7701301043 /* MMKV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E753631A94E85697D20851080C7E81A2 /* ImageDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267718BB98133B868FCFDBDCB6287E38 /* ImageDrawing.swift */; };
+		EA27942D77EF7DB73974F95F4DBC8668 /* MMKVCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE0A43E241BBFAB646151353A0C3B9F /* MMKVCore-dummy.m */; };
+		EC6D92164B40A09235F8F6DE0CC2B98E /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DE51CB1236512B2FB559C711AE5AF4 /* ImageDownloader.swift */; };
+		F1381CAD327263C186E0D740D79EC238 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE1A9A18EB190ACDD3BF0753E1C151 /* Delegate.swift */; };
+		F19FE1B07DAF13F2C5C54DC16802E3E7 /* openssl_md5_one.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50AE50F328157D1C3B5F21D4A503A4EB /* openssl_md5_one.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		F2F4C676A9C1D762077F21BFA40883D4 /* MMKVPredef.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A72400749D1479A0A13262DF527E28F /* MMKVPredef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6945D7465F7950EBAEBE6AEFE3AD194 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF15F80D7FEE242AF1D0B957841EDB3 /* KingfisherManager.swift */; };
+		FB95EE2F3E0D8EEC4FA5388A559AEC03 /* InterProcessLock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76EC06B94427923433EA2FC567AD654E /* InterProcessLock.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++"; }; };
+		FC19614DE285D46B002CF1B998FC3DB2 /* MMKV_IO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1740E1114A614A1DBE974B46994722A2 /* MMKV_IO.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		FC9188D1EEA88CA4F8C0E9CF57076F07 /* openssl_md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C098C23933BE2B9AFB95BE0E587A884 /* openssl_md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE3F5A36F9421B030FF24DD449EA774B /* MMBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D1BE6B9525E7C4C2AAC42DC5E6B4DE /* MMBuffer.cpp */; settings = {COMPILER_FLAGS = "-x objective-c++ -fno-objc-arc"; }; };
+		FE50FC4952C244B05D7327D28B73077D /* InterProcessLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 17528284C872D990772BE1EBF58A0B6A /* InterProcessLock.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D4AB61095B01F63BB08BCCB8AC1CDDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC8AE887C706A43711D115E69B9D988A;
-			remoteInfo = MMKVCore;
-		};
-		3C3A03D8AE1AB342BCBB894F390D5CC6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 91A6826828CB9FCD0169A7547E8A79EA;
-			remoteInfo = MMKV;
-		};
-		9BCC1BF829110A1D8240F5DF476474D9 /* PBXContainerItemProxy */ = {
+		066DF9CF4230ADDE9EBA6BC072677191 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8777C9F6889E59EFFD631D80AEE9048B;
 			remoteInfo = shared;
 		};
-		A1F61BE1A4A9918B22A7876A11486F6D /* PBXContainerItemProxy */ = {
+		6A31003FED78C393DE0E6D20B6BE4224 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8022D22FAA6690B5E1C379C1BCE1491;
+			remoteInfo = Kingfisher;
+		};
+		891CB09712CE49EA97E813A378C5A4D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = AC8AE887C706A43711D115E69B9D988A;
 			remoteInfo = MMKVCore;
 		};
-		CAE0EA31A6393200F99D854A4529B530 /* PBXContainerItemProxy */ = {
+		A05B2D79FCDC7C0EAB8CABF51FF173B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91A6826828CB9FCD0169A7547E8A79EA;
+			remoteInfo = MMKV;
+		};
+		D33ED3FC75511D2BE4BC9FBCFEFB0163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC8AE887C706A43711D115E69B9D988A;
+			remoteInfo = MMKVCore;
+		};
+		DCE5BF7627EE668D4FB8AEF4966CB6A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -137,106 +202,187 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		014CE5F3AC2E0AB8EDF3B34139C5DDD4 /* KeyValueHolder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = KeyValueHolder.cpp; path = Core/KeyValueHolder.cpp; sourceTree = "<group>"; };
 		0187F135D5F61750CD24C3E04B6E8B64 /* Pods-iosApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iosApp-frameworks.sh"; sourceTree = "<group>"; };
-		04BADA27FAC08B6FD2CCEE29327F802A /* MMKVCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKVCore.release.xcconfig; sourceTree = "<group>"; };
-		080E06AD063E329F6B75CC7417BB7600 /* PBEncodeItem.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PBEncodeItem.hpp; path = Core/PBEncodeItem.hpp; sourceTree = "<group>"; };
-		08880B9212B20036CA93ECC8972990CA /* MMKVCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKVCore.debug.xcconfig; sourceTree = "<group>"; };
-		09246CC381E7811DCB4EDBD8FD0C9B0C /* MMKV_IO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV_IO.h; path = Core/MMKV_IO.h; sourceTree = "<group>"; };
-		0A86418F5A2B652A685AA7C17D045D0C /* ThreadLock.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadLock.cpp; path = Core/ThreadLock.cpp; sourceTree = "<group>"; };
-		0B8FB9216A654E3DC4B0250C7E0C3EC2 /* openssl_aesv8-armx.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "openssl_aesv8-armx.S"; path = "Core/aes/openssl/openssl_aesv8-armx.S"; sourceTree = "<group>"; };
-		0D064B528B2266444AD0BEDE12F85D1C /* ScopedLock.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = ScopedLock.hpp; path = Core/ScopedLock.hpp; sourceTree = "<group>"; };
-		1CAF1B0DE3CBE839F8D56922AB99A0A3 /* MMKV_IO.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV_IO.cpp; path = Core/MMKV_IO.cpp; sourceTree = "<group>"; };
-		1F3BF22A7E6FEDC402F64183C6100E8F /* openssl_md32_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_md32_common.h; path = Core/aes/openssl/openssl_md32_common.h; sourceTree = "<group>"; };
-		20B60278100CBD92AF5A55A81245E7A3 /* CodedInputDataCrypt_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputDataCrypt_OSX.cpp; path = Core/CodedInputDataCrypt_OSX.cpp; sourceTree = "<group>"; };
-		23D03C4F5EF25B4A15712DDED423CC6A /* MiniPBCoder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MiniPBCoder.cpp; path = Core/MiniPBCoder.cpp; sourceTree = "<group>"; };
-		23F02FA3E51162C1DDC667B01B9C3918 /* MemoryFile_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_Android.cpp; path = Core/MemoryFile_Android.cpp; sourceTree = "<group>"; };
-		24F21975DC79289239987B27FABDBD42 /* MMKV.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV.cpp; path = Core/MMKV.cpp; sourceTree = "<group>"; };
-		273EB56BD8C4AC4A10CAB0464EABFA03 /* CodedInputDataCrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedInputDataCrypt.h; path = Core/CodedInputDataCrypt.h; sourceTree = "<group>"; };
-		2A9F89F00CE8BDE21D03DCC1D6AF7DED /* KeyValueHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyValueHolder.h; path = Core/KeyValueHolder.h; sourceTree = "<group>"; };
-		2B24C60518DCDEE7B313B83B5A3BB5EF /* CodedOutputData.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedOutputData.cpp; path = Core/CodedOutputData.cpp; sourceTree = "<group>"; };
-		2C7A19AD3501E3B8722D41DDC838527C /* MMKVCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKVCore-prefix.pch"; sourceTree = "<group>"; };
+		080D7D9AF3060473AB59AC52115CE109 /* openssl_aes-armv4.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "openssl_aes-armv4.S"; path = "Core/aes/openssl/openssl_aes-armv4.S"; sourceTree = "<group>"; };
+		0BFD2AC1ECA7F5C077B8FC81D1B2537B /* WKInterfaceImage+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKInterfaceImage+Kingfisher.swift"; path = "Sources/Extensions/WKInterfaceImage+Kingfisher.swift"; sourceTree = "<group>"; };
+		0C608425240D1563406C39520DE6FFBD /* MMKV_IO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV_IO.h; path = Core/MMKV_IO.h; sourceTree = "<group>"; };
+		0D894EDA90C4D43A795E5050BBEF2782 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Utility/Result.swift; sourceTree = "<group>"; };
+		10D74522B944AC21A32A7135545543BF /* MMKVCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKVCore-umbrella.h"; sourceTree = "<group>"; };
+		11A4493619187E261832773BFFD78A07 /* RetryStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryStrategy.swift; path = Sources/Networking/RetryStrategy.swift; sourceTree = "<group>"; };
+		146924D97C8643F92A23065CB3C88215 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Sources/General/ImageSource/Resource.swift; sourceTree = "<group>"; };
+		14D1BE6B9525E7C4C2AAC42DC5E6B4DE /* MMBuffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMBuffer.cpp; path = Core/MMBuffer.cpp; sourceTree = "<group>"; };
+		16B0178FA22351464F0CB9C0CAA8BACE /* MemoryFile.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile.cpp; path = Core/MemoryFile.cpp; sourceTree = "<group>"; };
+		16DE51CB1236512B2FB559C711AE5AF4 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/Networking/ImageDownloader.swift; sourceTree = "<group>"; };
+		1740E1114A614A1DBE974B46994722A2 /* MMKV_IO.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV_IO.cpp; path = Core/MMKV_IO.cpp; sourceTree = "<group>"; };
+		17528284C872D990772BE1EBF58A0B6A /* InterProcessLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InterProcessLock.h; path = Core/InterProcessLock.h; sourceTree = "<group>"; };
+		17BB419790E5AE06482A9061B441494C /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/Cache/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
+		17CFE1B9B0E407E203FE077B20E75490 /* MMKV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV.h; path = Core/MMKV.h; sourceTree = "<group>"; };
+		186478D676E12DCD7C95A3C156863BAD /* KingfisherError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherError.swift; path = Sources/General/KingfisherError.swift; sourceTree = "<group>"; };
+		19DDF83FCCCEFB1FE9E67744EA7CD69E /* ImageDownloaderDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloaderDelegate.swift; path = Sources/Networking/ImageDownloaderDelegate.swift; sourceTree = "<group>"; };
+		1ADAC86F342F15B8FD006CF8512DFF43 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/Views/AnimatedImageView.swift; sourceTree = "<group>"; };
+		1B7F18BFDFC7ECBD6AE62E68223F8C41 /* MMKV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKV-umbrella.h"; sourceTree = "<group>"; };
+		1BB82BB780B4235250580C3BC7590A4F /* MMKV.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV.cpp; path = Core/MMKV.cpp; sourceTree = "<group>"; };
+		1CDD4A806F759700D27D2FC645BA3F9A /* CodedInputData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedInputData.h; path = Core/CodedInputData.h; sourceTree = "<group>"; };
+		1D356AC258488CBBC4669A531CD50942 /* MMKVLog.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKVLog.cpp; path = Core/MMKVLog.cpp; sourceTree = "<group>"; };
+		1E3F1D7B5D0ED87142C370A5ADA2C986 /* openssl_opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_opensslconf.h; path = Core/aes/openssl/openssl_opensslconf.h; sourceTree = "<group>"; };
+		20B53893CE13B44D9A5BFE647E06C0FE /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Sources/Cache/CacheSerializer.swift; sourceTree = "<group>"; };
+		21485F429711E19AB770A2548C8740B6 /* CodedInputDataCrypt_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputDataCrypt_OSX.cpp; path = Core/CodedInputDataCrypt_OSX.cpp; sourceTree = "<group>"; };
+		23AC6480D879E84208E1188D3FE20929 /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
+		241798BD68CBB7C5FEA207DABDEDF3AA /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Cache/Storage.swift; sourceTree = "<group>"; };
+		258259E5E1B1D0DDE01F2750B35B06FE /* openssl_aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_aes.h; path = Core/aes/openssl/openssl_aes.h; sourceTree = "<group>"; };
+		267718BB98133B868FCFDBDCB6287E38 /* ImageDrawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDrawing.swift; path = Sources/Image/ImageDrawing.swift; sourceTree = "<group>"; };
+		292F518B91F4F768595255682839BF56 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Sources/Utility/String+MD5.swift"; sourceTree = "<group>"; };
+		2AA8D115646AD751911304A983B355B4 /* CodedInputData_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputData_OSX.cpp; path = Core/CodedInputData_OSX.cpp; sourceTree = "<group>"; };
+		2B4F295EFBD5F967FA197D639E6CEBF2 /* MMKVLog_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKVLog_Android.cpp; path = Core/MMKVLog_Android.cpp; sourceTree = "<group>"; };
+		2BC2FF6A91899E5C32F64B16EB8D7621 /* AESCrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AESCrypt.h; path = Core/aes/AESCrypt.h; sourceTree = "<group>"; };
+		30F063E81AEAE2C596247242EB2655CD /* MiniPBCoder_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MiniPBCoder_OSX.cpp; path = Core/MiniPBCoder_OSX.cpp; sourceTree = "<group>"; };
+		32B7C8D6B19EA3453617FB2ACF5D3721 /* CallbackQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallbackQueue.swift; path = Sources/Utility/CallbackQueue.swift; sourceTree = "<group>"; };
+		332F665312EBEC0AFAA494966731F1FA /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = Sources/General/Deprecated.swift; sourceTree = "<group>"; };
+		33EE539A5E86AB502E9AD571B41E7AFE /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/Cache/ImageCache.swift; sourceTree = "<group>"; };
+		33F95634157DE54D2B92F07FEAED2601 /* KeyValueHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyValueHolder.h; path = Core/KeyValueHolder.h; sourceTree = "<group>"; };
 		35548E3BD8DA30925E8FE97E67B84868 /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
-		35660BD6027C06E7CD92429E00ACC239 /* MemoryFile_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_Win32.cpp; path = Core/MemoryFile_Win32.cpp; sourceTree = "<group>"; };
-		358629785AB8B48F427AD00FA3768E20 /* MMKV_OSX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV_OSX.h; path = Core/MMKV_OSX.h; sourceTree = "<group>"; };
-		35E003CC510B845FC87DF410606A1F63 /* MMKV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKV.debug.xcconfig; sourceTree = "<group>"; };
-		37207981D4C46437C8D9C94ED9D776E0 /* MMKV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMKV-Info.plist"; sourceTree = "<group>"; };
-		38C10C2F7BABA23B478512E03FD0E8E4 /* MMKVHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKVHandler.h; path = iOS/MMKV/MMKV/MMKVHandler.h; sourceTree = "<group>"; };
-		39479E0EC9D30F1688546FB5B4B63377 /* CodedInputDataCrypt.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputDataCrypt.cpp; path = Core/CodedInputDataCrypt.cpp; sourceTree = "<group>"; };
-		3A2C44D1A47564D02956A30E0C81D407 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		3AE9AC026E53F57DBF0C2040176FB56D /* MemoryFile_Linux.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_Linux.cpp; path = Core/MemoryFile_Linux.cpp; sourceTree = "<group>"; };
-		3D3B8014933E8D48F71F777DA8A49AB7 /* MMKVMetaInfo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = MMKVMetaInfo.hpp; path = Core/MMKVMetaInfo.hpp; sourceTree = "<group>"; };
-		3D546C72C64FFFA79BD7C2C32A76F600 /* MMKV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKV-prefix.pch"; sourceTree = "<group>"; };
-		3EC1D2C89D859AC795D671A5B0A5366B /* openssl_aes_locl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_aes_locl.h; path = Core/aes/openssl/openssl_aes_locl.h; sourceTree = "<group>"; };
-		3F05C227493AEF53FDF8FD8ECFBD896B /* openssl_md5_dgst.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_md5_dgst.cpp; path = Core/aes/openssl/openssl_md5_dgst.cpp; sourceTree = "<group>"; };
+		3A57DDEEDD71A25ABB75BCFE7F3988E0 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionHelpers.swift; path = Sources/Utility/ExtensionHelpers.swift; sourceTree = "<group>"; };
+		3A72400749D1479A0A13262DF527E28F /* MMKVPredef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKVPredef.h; path = Core/MMKVPredef.h; sourceTree = "<group>"; };
+		3B0D06D4E880C1AB81202A7701301043 /* MMKV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV.h; path = iOS/MMKV/MMKV/MMKV.h; sourceTree = "<group>"; };
+		3B31166F241E96D40F8AD2CEB7DCCF34 /* openssl_aesv8-armx.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "openssl_aesv8-armx.S"; path = "Core/aes/openssl/openssl_aesv8-armx.S"; sourceTree = "<group>"; };
+		3C098C23933BE2B9AFB95BE0E587A884 /* openssl_md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_md5.h; path = Core/aes/openssl/openssl_md5.h; sourceTree = "<group>"; };
+		3D0260BA2AC2A4C9463CD58DAD8F3B7D /* MemoryFile_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_Win32.cpp; path = Core/MemoryFile_Win32.cpp; sourceTree = "<group>"; };
+		3D04E5F7A2D3BF16F82D4CAC204A28EC /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
+		3F06F5D49A1EEB58E3FDF9FD63146027 /* MemoryFile_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_OSX.cpp; path = Core/MemoryFile_OSX.cpp; sourceTree = "<group>"; };
 		3F64BADB16C311E9D09DAD0116F684F4 /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
-		41B0A424786AB5DF30EB281AA17CFCCE /* InterProcessLock_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock_Win32.cpp; path = Core/InterProcessLock_Win32.cpp; sourceTree = "<group>"; };
-		441F194B8F9815BBC09CC75B171D60B4 /* MMKV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMKV-dummy.m"; sourceTree = "<group>"; };
-		48078B926FF245FB3799F5DEBF63B3F5 /* ThreadLock_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadLock_Win32.cpp; path = Core/ThreadLock_Win32.cpp; sourceTree = "<group>"; };
-		4E4ED5342846E3C20C227C574BE5C6A0 /* MMKV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKV-umbrella.h"; sourceTree = "<group>"; };
+		40D025DF62E4FFA31D10E048E3CE887E /* ImageDataProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProcessor.swift; path = Sources/Networking/ImageDataProcessor.swift; sourceTree = "<group>"; };
+		40F2618A772FAF365954C2006CA2C232 /* GIFAnimatedImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GIFAnimatedImage.swift; path = Sources/Image/GIFAnimatedImage.swift; sourceTree = "<group>"; };
+		4163988A539ACAB14035F2BFD3516B9B /* MemoryFile_Linux.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_Linux.cpp; path = Core/MemoryFile_Linux.cpp; sourceTree = "<group>"; };
+		41E58EAA35E435AA6C23C1B01686CF50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		4370DFEB44F253F326AA4BEFD23F9658 /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Sources/Image/Placeholder.swift; sourceTree = "<group>"; };
+		446075C223348CCA62B5D33E7AF23C85 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
+		452B85921374987A3CF03CC8849CC3C8 /* MMKVMetaInfo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = MMKVMetaInfo.hpp; path = Core/MMKVMetaInfo.hpp; sourceTree = "<group>"; };
+		4924D5A03A240C840D55C60C6ADCE23A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		4BCEB888B44E2D734FE3A5C4317AB56C /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Sources/Networking/RequestModifier.swift; sourceTree = "<group>"; };
+		4CFDE1F43DF7F7139D4AD8A7FFE76F2F /* MMKV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMKV-dummy.m"; sourceTree = "<group>"; };
+		4EF8C5A69DDE68A3C6DC418A936902E3 /* ThreadLock_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadLock_Win32.cpp; path = Core/ThreadLock_Win32.cpp; sourceTree = "<group>"; };
+		4F5278FA9A6D1475352691BD6EE80332 /* MMKV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKV.debug.xcconfig; sourceTree = "<group>"; };
+		50AE50F328157D1C3B5F21D4A503A4EB /* openssl_md5_one.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_md5_one.cpp; path = Core/aes/openssl/openssl_md5_one.cpp; sourceTree = "<group>"; };
+		54A4F197351910A7EF02072168BB89C2 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Image/Image.swift; sourceTree = "<group>"; };
 		54DC7F9924F99FEE67A9AD3BEE09A10C /* Pods-iosApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iosApp-dummy.m"; sourceTree = "<group>"; };
-		5556F5E5788DBD18642119B992EB362E /* MMKVLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKVLog.h; path = Core/MMKVLog.h; sourceTree = "<group>"; };
-		556B70D922C173020EB617AACA9B460F /* AESCrypt.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = AESCrypt.cpp; path = Core/aes/AESCrypt.cpp; sourceTree = "<group>"; };
-		56332C5E96C2B64FCF5AE14AF8A42AC4 /* MMKVLog.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKVLog.cpp; path = Core/MMKVLog.cpp; sourceTree = "<group>"; };
-		5763C0EB03DC12D6B7853AD989241B76 /* ThreadLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThreadLock.h; path = Core/ThreadLock.h; sourceTree = "<group>"; };
+		55354087F43CCD9455F761BC504D20E2 /* MMKVCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMKVCore.modulemap; sourceTree = "<group>"; };
+		56AD3F6400DFF88DBDBBD5F2E257CC15 /* InterProcessLock_Win32.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock_Win32.cpp; path = Core/InterProcessLock_Win32.cpp; sourceTree = "<group>"; };
+		5AB4A786FE3270438B5790BB49197935 /* PBUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBUtility.h; path = Core/PBUtility.h; sourceTree = "<group>"; };
 		5AC974169B09D4545F741E9A2147610E /* Pods-iosApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosApp-Info.plist"; sourceTree = "<group>"; };
-		5C1E59B3556FACAF00AF10892C743FE2 /* openssl_opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_opensslconf.h; path = Core/aes/openssl/openssl_opensslconf.h; sourceTree = "<group>"; };
-		69927B903EAE3DD56BD5ED102FE314FA /* MemoryFile_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_OSX.cpp; path = Core/MemoryFile_OSX.cpp; sourceTree = "<group>"; };
-		6E82853BC38DF1945453E8BD52C1FD29 /* InterProcessLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InterProcessLock.h; path = Core/InterProcessLock.h; sourceTree = "<group>"; };
-		6F88F12CF57327CB53D78DBC1F958AF9 /* libMMKV.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = libMMKV.mm; path = iOS/MMKV/MMKV/libMMKV.mm; sourceTree = "<group>"; };
-		7217C4A8863B6020C4622D41B8488D17 /* MMKV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKV.release.xcconfig; sourceTree = "<group>"; };
+		5EF688A25F52F654EEEAACEDEAEE231B /* ScopedLock.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = ScopedLock.hpp; path = Core/ScopedLock.hpp; sourceTree = "<group>"; };
+		606A009DE236F369B58E35A680C0915B /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Sources/Kingfisher.h; sourceTree = "<group>"; };
+		618EBA7992DFCFEA58BBD17C4A93123D /* KFImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KFImage.swift; path = Sources/SwiftUI/KFImage.swift; sourceTree = "<group>"; };
+		61BF1EFFD7A2BBC409854AE66CE105E4 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Sources/Networking/RedirectHandler.swift; sourceTree = "<group>"; };
+		62158FA7FBD85D620B01436EB90C88E9 /* CodedInputDataCrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedInputDataCrypt.h; path = Core/CodedInputDataCrypt.h; sourceTree = "<group>"; };
+		65FA980D1CBBB27D699CBB96BBA3BBD2 /* AVAssetImageDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetImageDataProvider.swift; path = Sources/General/ImageSource/AVAssetImageDataProvider.swift; sourceTree = "<group>"; };
+		6FD81CA8488DF407A2D10CD18EEB1DAF /* openssl_arm_arch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_arm_arch.h; path = Core/aes/openssl/openssl_arm_arch.h; sourceTree = "<group>"; };
+		71E113CC920A902D040C160CD950006B /* Kingfisher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kingfisher-Info.plist"; sourceTree = "<group>"; };
 		73D4D08B8C9FAD17B10E8E5C0EB49A76 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
-		74B93E121865C4E06FBB4AE08D78B15A /* openssl_aes-armv4.S */ = {isa = PBXFileReference; includeInIndex = 1; name = "openssl_aes-armv4.S"; path = "Core/aes/openssl/openssl_aes-armv4.S"; sourceTree = "<group>"; };
-		74FCAED5A504CE87844E1C91E8AA80AD /* MMBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMBuffer.h; path = Core/MMBuffer.h; sourceTree = "<group>"; };
-		75D6FFD0A2A010AF218F5734629C73B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B5B1076B0F0513763148EEBBEB09B80 /* MemoryFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryFile.h; path = Core/MemoryFile.h; sourceTree = "<group>"; };
-		7F6E19D30E2E7A65C1612CAABE59CC01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		7F7B9F6F17F5595C47783833AEA8EADA /* PBUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBUtility.h; path = Core/PBUtility.h; sourceTree = "<group>"; };
-		7FB198B4FAC305CB1F2F55E3055CC814 /* MemoryFile.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile.cpp; path = Core/MemoryFile.cpp; sourceTree = "<group>"; };
-		8052FD1702C4C78CFBBD798ECF61ECD7 /* MMKVLog_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKVLog_Android.cpp; path = Core/MMKVLog_Android.cpp; sourceTree = "<group>"; };
-		852E4B0B21E665FA21B32A7416C4CEAF /* CodedInputData.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputData.cpp; path = Core/CodedInputData.cpp; sourceTree = "<group>"; };
-		885AA493B1D5728259334D31B2E06E9A /* MMKV_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV_OSX.cpp; path = Core/MMKV_OSX.cpp; sourceTree = "<group>"; };
-		890144D6DC40251AECBB932ED593BA90 /* MMKV_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV_Android.cpp; path = Core/MMKV_Android.cpp; sourceTree = "<group>"; };
-		8A210CAF5AC53C89B2983A4E497128F4 /* MMKV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV.h; path = iOS/MMKV/MMKV/MMKV.h; sourceTree = "<group>"; };
+		75DDBC2D442A66C1C6F9A2742C604B2F /* AESCrypt.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = AESCrypt.cpp; path = Core/aes/AESCrypt.cpp; sourceTree = "<group>"; };
+		766E03B46C615B07585947E8AA152D83 /* ImageDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProvider.swift; path = Sources/General/ImageSource/ImageDataProvider.swift; sourceTree = "<group>"; };
+		76EC06B94427923433EA2FC567AD654E /* InterProcessLock.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock.cpp; path = Core/InterProcessLock.cpp; sourceTree = "<group>"; };
+		7F290CE75B5FEB37ABCD17E4A01E280E /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Sources/Views/Indicator.swift; sourceTree = "<group>"; };
+		83456250F7EC6475E46ECCD02391C207 /* NSButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSButton+Kingfisher.swift"; path = "Sources/Extensions/NSButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		83BA538462BC50DA4E9C6F869D15C1FD /* MMKV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMKV.modulemap; sourceTree = "<group>"; };
+		84CB13C6082A972B2FC970F7B3200D99 /* MMKV_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV_OSX.cpp; path = Core/MMKV_OSX.cpp; sourceTree = "<group>"; };
+		87CAE6BA979B074CEBFAA58FE0329E2B /* PBUtility.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PBUtility.cpp; path = Core/PBUtility.cpp; sourceTree = "<group>"; };
 		8B524AABE529FB8A2D151B05321336E0 /* Pods-iosApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iosApp.modulemap"; sourceTree = "<group>"; };
-		8F3EE60E94D8030C414F88D600FB30E4 /* MMKV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMKV.modulemap; sourceTree = "<group>"; };
-		8FB4BDA766D0F4FD0C461F07C704A8DE /* MMKVCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKVCore-umbrella.h"; sourceTree = "<group>"; };
-		90083D637DA1ADE1E6987F0BA0A1B74C /* openssl_md5_one.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_md5_one.cpp; path = Core/aes/openssl/openssl_md5_one.cpp; sourceTree = "<group>"; };
-		92432A88F8275E5E8F6A03D97214A035 /* openssl_aes_core.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_aes_core.cpp; path = Core/aes/openssl/openssl_aes_core.cpp; sourceTree = "<group>"; };
-		9536B0408157767EC8898768AD1E8559 /* MMKVCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMKVCore-Info.plist"; sourceTree = "<group>"; };
+		8E52E3A59E2282016B8D9144E61CBEF1 /* openssl_aes_core.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_aes_core.cpp; path = Core/aes/openssl/openssl_aes_core.cpp; sourceTree = "<group>"; };
+		8F366AD95C946C53E0879FF0CD217512 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8FAFE0AE6DAEC364788D459CA3238B2F /* MiniPBCoder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MiniPBCoder.cpp; path = Core/MiniPBCoder.cpp; sourceTree = "<group>"; };
+		92D1842BDB23DBFFE644654AB5245AFD /* CodedOutputData.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedOutputData.cpp; path = Core/CodedOutputData.cpp; sourceTree = "<group>"; };
+		9440FF996E0D9724F107DF0615054008 /* MMKV_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMKV_Android.cpp; path = Core/MMKV_Android.cpp; sourceTree = "<group>"; };
+		95185A35FC665FA57CF47F0388DC3228 /* libMMKV.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = libMMKV.mm; path = iOS/MMKV/MMKV/libMMKV.mm; sourceTree = "<group>"; };
 		95B09EA82E7AF9ACCCCAF3E55C859116 /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
+		95FFA23D498ED02F17007D1655B0A16F /* openssl_aes_locl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_aes_locl.h; path = Core/aes/openssl/openssl_aes_locl.h; sourceTree = "<group>"; };
+		9975B5920B64BC86B4DD1162866926FA /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/General/Kingfisher.swift; sourceTree = "<group>"; };
+		9A0449C22108FB4414396876894DCDE0 /* SizeExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SizeExtensions.swift; path = Sources/Utility/SizeExtensions.swift; sourceTree = "<group>"; };
 		9BB0B8B698D4C35D4F9A07EF70910170 /* Pods-iosApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iosApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E7566DA34765D1BB8AD7B544FA37002 /* Runtime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Runtime.swift; path = Sources/Utility/Runtime.swift; sourceTree = "<group>"; };
 		9F1FFC8B10F4D7D4F37606E8959B3F29 /* Pods-iosApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iosApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9F259D321208F8048951777F524AE3FA /* openssl_cfb128.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_cfb128.cpp; path = Core/aes/openssl/openssl_cfb128.cpp; sourceTree = "<group>"; };
 		9FECCB5AFF87D121F15BA01E683C7932 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
-		A5CA1EC73B489D8A71E737C8FF7D2CCF /* openssl_arm_arch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_arm_arch.h; path = Core/aes/openssl/openssl_arm_arch.h; sourceTree = "<group>"; };
-		A7CAA4D11EB62EEBEA4939B488925B67 /* CodedOutputData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedOutputData.h; path = Core/CodedOutputData.h; sourceTree = "<group>"; };
-		ACEDEF71FCCAB9B97853E9934A8B1DC9 /* CodedInputData_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputData_OSX.cpp; path = Core/CodedInputData_OSX.cpp; sourceTree = "<group>"; };
+		A2C37ED3FCE04E0E1463E43C8F908C32 /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Sources/General/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		A354091CE4A694C5A675CECCBB082BED /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Sources/Networking/SessionDelegate.swift; sourceTree = "<group>"; };
+		A3BCB46B40242C52B9C9D78D9C0E0FA3 /* MMKVCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKVCore-prefix.pch"; sourceTree = "<group>"; };
+		A4275654C3C056E5532AEF426568B1C2 /* ThreadLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ThreadLock.h; path = Core/ThreadLock.h; sourceTree = "<group>"; };
+		A6F85A061F65B05797175DC4EA30C29C /* MMKVCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKVCore.debug.xcconfig; sourceTree = "<group>"; };
+		A949B4AB347DD7068E30039A0E07DE6A /* MMKV_OSX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV_OSX.h; path = Core/MMKV_OSX.h; sourceTree = "<group>"; };
+		A97CB3EA0D0B3849820FB403610F6DA6 /* CodedOutputData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedOutputData.h; path = Core/CodedOutputData.h; sourceTree = "<group>"; };
+		AC9FF8F48B1772C42BE9DAD2ACBD6381 /* NSTextAttachment+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextAttachment+Kingfisher.swift"; path = "Sources/Extensions/NSTextAttachment+Kingfisher.swift"; sourceTree = "<group>"; };
+		ACE828AFE92F3B052383F41B53B35598 /* MMKVLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKVLog.h; path = Core/MMKVLog.h; sourceTree = "<group>"; };
+		AF88D80AE8D773EE5AB895B8BEF3352B /* MMKV-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMKV-Info.plist"; sourceTree = "<group>"; };
+		B08F620DB0466EC106649321BB28359C /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Sources/Networking/ImageModifier.swift; sourceTree = "<group>"; };
 		B097DD7534E741D5C41838011D755842 /* Pods-iosApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-iosApp"; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5D9CFDF12CC42F45D5441B5D6DA2CE3 /* Checksum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Checksum.h; path = Core/crc32/Checksum.h; sourceTree = "<group>"; };
+		B126C8D4EF47411764B5600F66D7BCA9 /* MMKVCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKVCore.release.xcconfig; sourceTree = "<group>"; };
+		B322C6972BC43027922D22B90315380B /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/Networking/ImagePrefetcher.swift; sourceTree = "<group>"; };
+		B37CC602715BEE2C816CED07A678357E /* SessionDataTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDataTask.swift; path = Sources/Networking/SessionDataTask.swift; sourceTree = "<group>"; };
+		B48107BCE9EB0AFDD9A7AD170F64DBC2 /* MMKV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMKV.release.xcconfig; sourceTree = "<group>"; };
+		B4B4B2F3AF8E57D5E0914BE5647E11C8 /* CodedInputData.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputData.cpp; path = Core/CodedInputData.cpp; sourceTree = "<group>"; };
 		B88A54159B245E727A6D16DEFE105A09 /* MMKV */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMKV; path = MMKV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA3691EC786D57AB153F35187AA86079 /* KeyValueHolder.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = KeyValueHolder.cpp; path = Core/KeyValueHolder.cpp; sourceTree = "<group>"; };
-		BA8BD874590BF8E42CD036B1DBBBDF3D /* MMKV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKV.h; path = Core/MMKV.h; sourceTree = "<group>"; };
-		BF68DE4FDB4BDA8D04DBABC86794677F /* MMKVCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MMKVCore.modulemap; sourceTree = "<group>"; };
-		C348C0BDD7DC4425A1A2F2444BF86661 /* AESCrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AESCrypt.h; path = Core/aes/AESCrypt.h; sourceTree = "<group>"; };
-		C4A5AAFCF14D22841FCE55FB198BC283 /* openssl_md5_locl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_md5_locl.h; path = Core/aes/openssl/openssl_md5_locl.h; sourceTree = "<group>"; };
-		C83BFE895D1B0EA3832F4D327BEF8959 /* MMKVCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMKVCore-dummy.m"; sourceTree = "<group>"; };
-		C97DA7F8B3023DAAA2BCA7766388FE8B /* InterProcessLock.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock.cpp; path = Core/InterProcessLock.cpp; sourceTree = "<group>"; };
-		CD2158F824E1912ED124597E53B1B57C /* MiniPBCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MiniPBCoder.h; path = Core/MiniPBCoder.h; sourceTree = "<group>"; };
-		D4875D4843B9968DD9471DD58EF7E61F /* InterProcessLock_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock_Android.cpp; path = Core/InterProcessLock_Android.cpp; sourceTree = "<group>"; };
-		D7CBC8976BB0D3B09C8E17D78DD93DAF /* PBUtility.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = PBUtility.cpp; path = Core/PBUtility.cpp; sourceTree = "<group>"; };
-		E09CD10F5156F907E952F010D7699B1A /* openssl_aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_aes.h; path = Core/aes/openssl/openssl_aes.h; sourceTree = "<group>"; };
+		B9BD38F2EE0A94E7516EEDDF5CD3F427 /* MemoryStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryStorage.swift; path = Sources/Cache/MemoryStorage.swift; sourceTree = "<group>"; };
+		BDADF614D83AFFEC7CA0FD2733C94A9A /* openssl_cfb128.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_cfb128.cpp; path = Core/aes/openssl/openssl_cfb128.cpp; sourceTree = "<group>"; };
+		C10C2A6D4661A05AE5564A94BEAABC52 /* InterProcessLock_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = InterProcessLock_Android.cpp; path = Core/InterProcessLock_Android.cpp; sourceTree = "<group>"; };
+		C22CD1CA71E8B4336E549A7D4531F930 /* AuthenticationChallengeResponsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationChallengeResponsable.swift; path = Sources/Networking/AuthenticationChallengeResponsable.swift; sourceTree = "<group>"; };
+		C2C886429E4C1DCBB83FAAAE96B3BA7A /* Kingfisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.debug.xcconfig; sourceTree = "<group>"; };
+		C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Kingfisher; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C871B407E8916EC3F4B955F3C769E506 /* openssl_md32_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_md32_common.h; path = Core/aes/openssl/openssl_md32_common.h; sourceTree = "<group>"; };
+		CA4C1141DE3DE26C65164DBFDEB3A611 /* MMKVHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKVHandler.h; path = iOS/MMKV/MMKV/MMKVHandler.h; sourceTree = "<group>"; };
+		CAA1310ABCCB32DB3428B549EADA1BFE /* ImageProgressive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProgressive.swift; path = Sources/Image/ImageProgressive.swift; sourceTree = "<group>"; };
+		CB5C284E2937B561F24A522B89EA71BE /* Kingfisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.release.xcconfig; sourceTree = "<group>"; };
+		CE92757E46D951887D6427F9E587B9B0 /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Sources/Image/ImageProcessor.swift; sourceTree = "<group>"; };
+		D104369CA36EC9976BB0D63E3785C1A4 /* ImageFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFormat.swift; path = Sources/Image/ImageFormat.swift; sourceTree = "<group>"; };
+		D2D3D335E5EA20BBC841C1E4E42B5509 /* Checksum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Checksum.h; path = Core/crc32/Checksum.h; sourceTree = "<group>"; };
+		D3BE1A9A18EB190ACDD3BF0753E1C151 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = Sources/Utility/Delegate.swift; sourceTree = "<group>"; };
+		D5BCAECFBAC6DB656E1F01A37D8BE536 /* MMKV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMKV-prefix.pch"; sourceTree = "<group>"; };
+		D5C9BE2AA2845C41B6922E01B901D54F /* MMKVCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MMKVCore-Info.plist"; sourceTree = "<group>"; };
+		D7AEECA46B6C7E5B2B3EB692B4DD038C /* openssl_md5_locl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_md5_locl.h; path = Core/aes/openssl/openssl_md5_locl.h; sourceTree = "<group>"; };
+		D819653064E753187460165121A6DE1D /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Sources/Extensions/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		DB768A7E59A5F8C8BE4A499872806CED /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = Sources/General/ImageSource/Source.swift; sourceTree = "<group>"; };
+		DCF15F80D7FEE242AF1D0B957841EDB3 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/General/KingfisherManager.swift; sourceTree = "<group>"; };
 		E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MMKVCore; path = MMKVCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC4651827D08DC1AC6955FE7DDB7A726 /* MMBuffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MMBuffer.cpp; path = Core/MMBuffer.cpp; sourceTree = "<group>"; };
-		ECED935591797B429CBDA82C86D9936C /* CodedInputData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CodedInputData.h; path = Core/CodedInputData.h; sourceTree = "<group>"; };
-		F2194DD7A435F4E30B2144845F359454 /* openssl_md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = openssl_md5.h; path = Core/aes/openssl/openssl_md5.h; sourceTree = "<group>"; };
+		E540DEF84A8F7C93C389D49D852FB9A7 /* Kingfisher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Kingfisher.modulemap; sourceTree = "<group>"; };
+		E6F72298DF477CDA9FE58305ABA2EFDD /* PBEncodeItem.hpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.h; name = PBEncodeItem.hpp; path = Core/PBEncodeItem.hpp; sourceTree = "<group>"; };
+		E7963C47246DC5730857D264B2297779 /* MMBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMBuffer.h; path = Core/MMBuffer.h; sourceTree = "<group>"; };
+		EAA4023F8D5591C87C69C73393EF25F9 /* ThreadLock.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = ThreadLock.cpp; path = Core/ThreadLock.cpp; sourceTree = "<group>"; };
+		EC7EE12A94A69CFA7292D0E59FF0B2B2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		EF7C056832B6332AF489B68136E251DE /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Image/Filter.swift; sourceTree = "<group>"; };
+		F139BF31BCF7F31D021BEFDFAB8EB760 /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Sources/Extensions/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		F2113DEB5DC943796D103019D2D3DB0A /* MemoryFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryFile.h; path = Core/MemoryFile.h; sourceTree = "<group>"; };
+		F3C6582B7B43F27031CD10C113060B17 /* openssl_md5_dgst.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = openssl_md5_dgst.cpp; path = Core/aes/openssl/openssl_md5_dgst.cpp; sourceTree = "<group>"; };
+		F41C61AD6A879062F28E4D905BC8E094 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		F4D9ACCD8CC8C60915375F905AEF0574 /* CodedInputDataCrypt.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = CodedInputDataCrypt.cpp; path = Core/CodedInputDataCrypt.cpp; sourceTree = "<group>"; };
+		F7CBE736A4BBB4F90D725A47977357C6 /* MiniPBCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MiniPBCoder.h; path = Core/MiniPBCoder.h; sourceTree = "<group>"; };
 		F87A626222A8D9B26448A9FEB04FD0DF /* Pods-iosApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iosApp-umbrella.h"; sourceTree = "<group>"; };
+		F8ACEF1E9176DA2D7BEAC726A6D89604 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Sources/Image/ImageTransition.swift; sourceTree = "<group>"; };
+		F9375FF1BF79BFC48B3E9F81C91DB80D /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
+		FA8A55997E4640D7347F7FEBC49A5DC6 /* ImageBinder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageBinder.swift; path = Sources/SwiftUI/ImageBinder.swift; sourceTree = "<group>"; };
 		FB1BF8BE937671FB0F330C2D28634477 /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		FCDB659DEDDE7BA02FC4C040656C0C78 /* MiniPBCoder_OSX.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MiniPBCoder_OSX.cpp; path = Core/MiniPBCoder_OSX.cpp; sourceTree = "<group>"; };
-		FCF5A8EDED0799A02E38EB98EE368BC3 /* MMKVPredef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMKVPredef.h; path = Core/MMKVPredef.h; sourceTree = "<group>"; };
+		FD6AC32067275617C371356699C029B9 /* MemoryFile_Android.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = MemoryFile_Android.cpp; path = Core/MemoryFile_Android.cpp; sourceTree = "<group>"; };
+		FDE0A43E241BBFAB646151353A0C3B9F /* MMKVCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMKVCore-dummy.m"; sourceTree = "<group>"; };
+		FF38E3EA676A2F6C1CFACB4A13903BDA /* DiskStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskStorage.swift; path = Sources/Cache/DiskStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		002F14E87B3FA02F67D11C59A57C5120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB4BAEE922C784361C336D822DCCB20 /* Accelerate.framework in Frameworks */,
+				92DE7F6A523333DBB38A65EC221EC018 /* CFNetwork.framework in Frameworks */,
+				8C213D265138786E03EC8232DD62FD01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13EA384F838787742B3C6AB95CF445B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8608521C36D4A31E295D27777814F0A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A7681D6B1A456A3887F2003DF74F5A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,33 +392,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CA83077F663A4437B0098788B59A4A4 /* Frameworks */ = {
+		FB9AB980112668D2A4EC081A744CB560 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D0C1026CDC36DEDC546F0EB4DEE972D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EDEEDEEFB2B78D7736DBC31E51FC5ABD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BCAD88827C66EA365BCD423B76348539 /* CoreFoundation.framework in Frameworks */,
-				84D09FA4D115DDD38AA0094FDB336038 /* Foundation.framework in Frameworks */,
-				FC4ACFA488C931F47B45D61880D39BDF /* UIKit.framework in Frameworks */,
+				77427444CB3204F2E16E7E3ADC63D50A /* CoreFoundation.framework in Frameworks */,
+				7C771CA7D01B678FE2090CFE859A966A /* Foundation.framework in Frameworks */,
+				2903DD23BE3206DCDDD4A670F868A12A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+		0ACFBFAC96489FD6AFA24D12B88652A5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5005540F0924E0D21C96389F8957A247 /* iOS */,
+				E540DEF84A8F7C93C389D49D852FB9A7 /* Kingfisher.modulemap */,
+				F9375FF1BF79BFC48B3E9F81C91DB80D /* Kingfisher-dummy.m */,
+				71E113CC920A902D040C160CD950006B /* Kingfisher-Info.plist */,
+				3D04E5F7A2D3BF16F82D4CAC204A28EC /* Kingfisher-prefix.pch */,
+				23AC6480D879E84208E1188D3FE20929 /* Kingfisher-umbrella.h */,
+				C2C886429E4C1DCBB83FAAAE96B3BA7A /* Kingfisher.debug.xcconfig */,
+				CB5C284E2937B561F24A522B89EA71BE /* Kingfisher.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Kingfisher";
 			sourceTree = "<group>";
 		};
 		11C970DEAE48C6D0282DFE54684F53F1 /* Targets Support Files */ = {
@@ -291,29 +436,84 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		40AC497E2EE3B5E2C1B494CBEB43F01B /* Support Files */ = {
+		3170F0D7112406AEEBCFF115D93B3599 /* MMKVCore */ = {
 			isa = PBXGroup;
 			children = (
-				BF68DE4FDB4BDA8D04DBABC86794677F /* MMKVCore.modulemap */,
-				C83BFE895D1B0EA3832F4D327BEF8959 /* MMKVCore-dummy.m */,
-				9536B0408157767EC8898768AD1E8559 /* MMKVCore-Info.plist */,
-				2C7A19AD3501E3B8722D41DDC838527C /* MMKVCore-prefix.pch */,
-				8FB4BDA766D0F4FD0C461F07C704A8DE /* MMKVCore-umbrella.h */,
-				08880B9212B20036CA93ECC8972990CA /* MMKVCore.debug.xcconfig */,
-				04BADA27FAC08B6FD2CCEE29327F802A /* MMKVCore.release.xcconfig */,
+				75DDBC2D442A66C1C6F9A2742C604B2F /* AESCrypt.cpp */,
+				2BC2FF6A91899E5C32F64B16EB8D7621 /* AESCrypt.h */,
+				D2D3D335E5EA20BBC841C1E4E42B5509 /* Checksum.h */,
+				B4B4B2F3AF8E57D5E0914BE5647E11C8 /* CodedInputData.cpp */,
+				1CDD4A806F759700D27D2FC645BA3F9A /* CodedInputData.h */,
+				2AA8D115646AD751911304A983B355B4 /* CodedInputData_OSX.cpp */,
+				F4D9ACCD8CC8C60915375F905AEF0574 /* CodedInputDataCrypt.cpp */,
+				62158FA7FBD85D620B01436EB90C88E9 /* CodedInputDataCrypt.h */,
+				21485F429711E19AB770A2548C8740B6 /* CodedInputDataCrypt_OSX.cpp */,
+				92D1842BDB23DBFFE644654AB5245AFD /* CodedOutputData.cpp */,
+				A97CB3EA0D0B3849820FB403610F6DA6 /* CodedOutputData.h */,
+				76EC06B94427923433EA2FC567AD654E /* InterProcessLock.cpp */,
+				17528284C872D990772BE1EBF58A0B6A /* InterProcessLock.h */,
+				C10C2A6D4661A05AE5564A94BEAABC52 /* InterProcessLock_Android.cpp */,
+				56AD3F6400DFF88DBDBBD5F2E257CC15 /* InterProcessLock_Win32.cpp */,
+				014CE5F3AC2E0AB8EDF3B34139C5DDD4 /* KeyValueHolder.cpp */,
+				33F95634157DE54D2B92F07FEAED2601 /* KeyValueHolder.h */,
+				16B0178FA22351464F0CB9C0CAA8BACE /* MemoryFile.cpp */,
+				F2113DEB5DC943796D103019D2D3DB0A /* MemoryFile.h */,
+				FD6AC32067275617C371356699C029B9 /* MemoryFile_Android.cpp */,
+				4163988A539ACAB14035F2BFD3516B9B /* MemoryFile_Linux.cpp */,
+				3F06F5D49A1EEB58E3FDF9FD63146027 /* MemoryFile_OSX.cpp */,
+				3D0260BA2AC2A4C9463CD58DAD8F3B7D /* MemoryFile_Win32.cpp */,
+				8FAFE0AE6DAEC364788D459CA3238B2F /* MiniPBCoder.cpp */,
+				F7CBE736A4BBB4F90D725A47977357C6 /* MiniPBCoder.h */,
+				30F063E81AEAE2C596247242EB2655CD /* MiniPBCoder_OSX.cpp */,
+				14D1BE6B9525E7C4C2AAC42DC5E6B4DE /* MMBuffer.cpp */,
+				E7963C47246DC5730857D264B2297779 /* MMBuffer.h */,
+				1BB82BB780B4235250580C3BC7590A4F /* MMKV.cpp */,
+				17CFE1B9B0E407E203FE077B20E75490 /* MMKV.h */,
+				9440FF996E0D9724F107DF0615054008 /* MMKV_Android.cpp */,
+				1740E1114A614A1DBE974B46994722A2 /* MMKV_IO.cpp */,
+				0C608425240D1563406C39520DE6FFBD /* MMKV_IO.h */,
+				84CB13C6082A972B2FC970F7B3200D99 /* MMKV_OSX.cpp */,
+				A949B4AB347DD7068E30039A0E07DE6A /* MMKV_OSX.h */,
+				1D356AC258488CBBC4669A531CD50942 /* MMKVLog.cpp */,
+				ACE828AFE92F3B052383F41B53B35598 /* MMKVLog.h */,
+				2B4F295EFBD5F967FA197D639E6CEBF2 /* MMKVLog_Android.cpp */,
+				452B85921374987A3CF03CC8849CC3C8 /* MMKVMetaInfo.hpp */,
+				3A72400749D1479A0A13262DF527E28F /* MMKVPredef.h */,
+				258259E5E1B1D0DDE01F2750B35B06FE /* openssl_aes.h */,
+				080D7D9AF3060473AB59AC52115CE109 /* openssl_aes-armv4.S */,
+				8E52E3A59E2282016B8D9144E61CBEF1 /* openssl_aes_core.cpp */,
+				95FFA23D498ED02F17007D1655B0A16F /* openssl_aes_locl.h */,
+				3B31166F241E96D40F8AD2CEB7DCCF34 /* openssl_aesv8-armx.S */,
+				6FD81CA8488DF407A2D10CD18EEB1DAF /* openssl_arm_arch.h */,
+				BDADF614D83AFFEC7CA0FD2733C94A9A /* openssl_cfb128.cpp */,
+				C871B407E8916EC3F4B955F3C769E506 /* openssl_md32_common.h */,
+				3C098C23933BE2B9AFB95BE0E587A884 /* openssl_md5.h */,
+				F3C6582B7B43F27031CD10C113060B17 /* openssl_md5_dgst.cpp */,
+				D7AEECA46B6C7E5B2B3EB692B4DD038C /* openssl_md5_locl.h */,
+				50AE50F328157D1C3B5F21D4A503A4EB /* openssl_md5_one.cpp */,
+				1E3F1D7B5D0ED87142C370A5ADA2C986 /* openssl_opensslconf.h */,
+				E6F72298DF477CDA9FE58305ABA2EFDD /* PBEncodeItem.hpp */,
+				87CAE6BA979B074CEBFAA58FE0329E2B /* PBUtility.cpp */,
+				5AB4A786FE3270438B5790BB49197935 /* PBUtility.h */,
+				5EF688A25F52F654EEEAACEDEAEE231B /* ScopedLock.hpp */,
+				EAA4023F8D5591C87C69C73393EF25F9 /* ThreadLock.cpp */,
+				A4275654C3C056E5532AEF426568B1C2 /* ThreadLock.h */,
+				4EF8C5A69DDE68A3C6DC418A936902E3 /* ThreadLock_Win32.cpp */,
+				769F6F37B2CF8DDC80D6688C98483191 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MMKVCore";
+			name = MMKVCore;
+			path = MMKVCore;
 			sourceTree = "<group>";
 		};
-		5005540F0924E0D21C96389F8957A247 /* iOS */ = {
+		36D8AB81538E8AE10E03766903E42E7F /* Kingfisher */ = {
 			isa = PBXGroup;
 			children = (
-				3A2C44D1A47564D02956A30E0C81D407 /* CoreFoundation.framework */,
-				75D6FFD0A2A010AF218F5734629C73B6 /* Foundation.framework */,
-				7F6E19D30E2E7A65C1612CAABE59CC01 /* UIKit.framework */,
+				A0A0865EA40CD78EDF9E4255F694AF39 /* Core */,
+				0ACFBFAC96489FD6AFA24D12B88652A5 /* Support Files */,
+				B5EFC25C7787B48810D9FE31AB112AE6 /* SwiftUI */,
 			);
-			name = iOS;
+			name = Kingfisher;
+			path = Kingfisher;
 			sourceTree = "<group>";
 		};
 		52A898E555C2DBD7D25A7E44754C3FC6 /* Pods-iosApp */ = {
@@ -351,6 +551,36 @@
 			path = "../iosApp/Pods/Target Support Files/shared";
 			sourceTree = "<group>";
 		};
+		612BE4E724DD8E68658A4A25AA059853 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				83BA538462BC50DA4E9C6F869D15C1FD /* MMKV.modulemap */,
+				4CFDE1F43DF7F7139D4AD8A7FFE76F2F /* MMKV-dummy.m */,
+				AF88D80AE8D773EE5AB895B8BEF3352B /* MMKV-Info.plist */,
+				D5BCAECFBAC6DB656E1F01A37D8BE536 /* MMKV-prefix.pch */,
+				1B7F18BFDFC7ECBD6AE62E68223F8C41 /* MMKV-umbrella.h */,
+				4F5278FA9A6D1475352691BD6EE80332 /* MMKV.debug.xcconfig */,
+				B48107BCE9EB0AFDD9A7AD170F64DBC2 /* MMKV.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMKV";
+			sourceTree = "<group>";
+		};
+		769F6F37B2CF8DDC80D6688C98483191 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55354087F43CCD9455F761BC504D20E2 /* MMKVCore.modulemap */,
+				FDE0A43E241BBFAB646151353A0C3B9F /* MMKVCore-dummy.m */,
+				D5C9BE2AA2845C41B6922E01B901D54F /* MMKVCore-Info.plist */,
+				A3BCB46B40242C52B9C9D78D9C0E0FA3 /* MMKVCore-prefix.pch */,
+				10D74522B944AC21A32A7135545543BF /* MMKVCore-umbrella.h */,
+				A6F85A061F65B05797175DC4EA30C29C /* MMKVCore.debug.xcconfig */,
+				B126C8D4EF47411764B5600F66D7BCA9 /* MMKVCore.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MMKVCore";
+			sourceTree = "<group>";
+		};
 		7DBF81461E18ACE1B4BD971BAC841CF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,21 +589,89 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		913FE019404FB00631DD643F1374A474 /* MMKV */ = {
+		7FFF35E0E90E256150C3FCAA3069FBB6 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6F88F12CF57327CB53D78DBC1F958AF9 /* libMMKV.mm */,
-				8A210CAF5AC53C89B2983A4E497128F4 /* MMKV.h */,
-				38C10C2F7BABA23B478512E03FD0E8E4 /* MMKVHandler.h */,
-				A1A1EA5B9A5EA742E9CEE9F7208C3C43 /* Support Files */,
+				4924D5A03A240C840D55C60C6ADCE23A /* Accelerate.framework */,
+				F41C61AD6A879062F28E4D905BC8E094 /* CFNetwork.framework */,
+				EC7EE12A94A69CFA7292D0E59FF0B2B2 /* CoreFoundation.framework */,
+				8F366AD95C946C53E0879FF0CD217512 /* Foundation.framework */,
+				41E58EAA35E435AA6C23C1B01686CF50 /* UIKit.framework */,
 			);
-			name = MMKV;
-			path = MMKV;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		A12E12EC2A48582A9B8CE08AA71593D6 /* Products */ = {
+		A0A0865EA40CD78EDF9E4255F694AF39 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1ADAC86F342F15B8FD006CF8512DFF43 /* AnimatedImageView.swift */,
+				C22CD1CA71E8B4336E549A7D4531F930 /* AuthenticationChallengeResponsable.swift */,
+				65FA980D1CBBB27D699CBB96BBA3BBD2 /* AVAssetImageDataProvider.swift */,
+				446075C223348CCA62B5D33E7AF23C85 /* Box.swift */,
+				20B53893CE13B44D9A5BFE647E06C0FE /* CacheSerializer.swift */,
+				32B7C8D6B19EA3453617FB2ACF5D3721 /* CallbackQueue.swift */,
+				D3BE1A9A18EB190ACDD3BF0753E1C151 /* Delegate.swift */,
+				332F665312EBEC0AFAA494966731F1FA /* Deprecated.swift */,
+				FF38E3EA676A2F6C1CFACB4A13903BDA /* DiskStorage.swift */,
+				3A57DDEEDD71A25ABB75BCFE7F3988E0 /* ExtensionHelpers.swift */,
+				EF7C056832B6332AF489B68136E251DE /* Filter.swift */,
+				17BB419790E5AE06482A9061B441494C /* FormatIndicatedCacheSerializer.swift */,
+				40F2618A772FAF365954C2006CA2C232 /* GIFAnimatedImage.swift */,
+				54A4F197351910A7EF02072168BB89C2 /* Image.swift */,
+				33EE539A5E86AB502E9AD571B41E7AFE /* ImageCache.swift */,
+				40D025DF62E4FFA31D10E048E3CE887E /* ImageDataProcessor.swift */,
+				766E03B46C615B07585947E8AA152D83 /* ImageDataProvider.swift */,
+				16DE51CB1236512B2FB559C711AE5AF4 /* ImageDownloader.swift */,
+				19DDF83FCCCEFB1FE9E67744EA7CD69E /* ImageDownloaderDelegate.swift */,
+				267718BB98133B868FCFDBDCB6287E38 /* ImageDrawing.swift */,
+				D104369CA36EC9976BB0D63E3785C1A4 /* ImageFormat.swift */,
+				B08F620DB0466EC106649321BB28359C /* ImageModifier.swift */,
+				B322C6972BC43027922D22B90315380B /* ImagePrefetcher.swift */,
+				CE92757E46D951887D6427F9E587B9B0 /* ImageProcessor.swift */,
+				CAA1310ABCCB32DB3428B549EADA1BFE /* ImageProgressive.swift */,
+				F8ACEF1E9176DA2D7BEAC726A6D89604 /* ImageTransition.swift */,
+				F139BF31BCF7F31D021BEFDFAB8EB760 /* ImageView+Kingfisher.swift */,
+				7F290CE75B5FEB37ABCD17E4A01E280E /* Indicator.swift */,
+				606A009DE236F369B58E35A680C0915B /* Kingfisher.h */,
+				9975B5920B64BC86B4DD1162866926FA /* Kingfisher.swift */,
+				186478D676E12DCD7C95A3C156863BAD /* KingfisherError.swift */,
+				DCF15F80D7FEE242AF1D0B957841EDB3 /* KingfisherManager.swift */,
+				A2C37ED3FCE04E0E1463E43C8F908C32 /* KingfisherOptionsInfo.swift */,
+				B9BD38F2EE0A94E7516EEDDF5CD3F427 /* MemoryStorage.swift */,
+				83456250F7EC6475E46ECCD02391C207 /* NSButton+Kingfisher.swift */,
+				AC9FF8F48B1772C42BE9DAD2ACBD6381 /* NSTextAttachment+Kingfisher.swift */,
+				4370DFEB44F253F326AA4BEFD23F9658 /* Placeholder.swift */,
+				61BF1EFFD7A2BBC409854AE66CE105E4 /* RedirectHandler.swift */,
+				4BCEB888B44E2D734FE3A5C4317AB56C /* RequestModifier.swift */,
+				146924D97C8643F92A23065CB3C88215 /* Resource.swift */,
+				0D894EDA90C4D43A795E5050BBEF2782 /* Result.swift */,
+				11A4493619187E261832773BFFD78A07 /* RetryStrategy.swift */,
+				9E7566DA34765D1BB8AD7B544FA37002 /* Runtime.swift */,
+				B37CC602715BEE2C816CED07A678357E /* SessionDataTask.swift */,
+				A354091CE4A694C5A675CECCBB082BED /* SessionDelegate.swift */,
+				9A0449C22108FB4414396876894DCDE0 /* SizeExtensions.swift */,
+				DB768A7E59A5F8C8BE4A499872806CED /* Source.swift */,
+				241798BD68CBB7C5FEA207DABDEDF3AA /* Storage.swift */,
+				292F518B91F4F768595255682839BF56 /* String+MD5.swift */,
+				D819653064E753187460165121A6DE1D /* UIButton+Kingfisher.swift */,
+				0BFD2AC1ECA7F5C077B8FC81D1B2537B /* WKInterfaceImage+Kingfisher.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B5EFC25C7787B48810D9FE31AB112AE6 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				FA8A55997E4640D7347F7FEBC49A5DC6 /* ImageBinder.swift */,
+				618EBA7992DFCFEA58BBD17C4A93123D /* KFImage.swift */,
+			);
+			name = SwiftUI;
+			sourceTree = "<group>";
+		};
+		B601A3266FD0E886384B5FA8B1CD0776 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher */,
 				B88A54159B245E727A6D16DEFE105A09 /* MMKV */,
 				E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore */,
 				B097DD7534E741D5C41838011D755842 /* Pods-iosApp */,
@@ -381,97 +679,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A1A1EA5B9A5EA742E9CEE9F7208C3C43 /* Support Files */ = {
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8F3EE60E94D8030C414F88D600FB30E4 /* MMKV.modulemap */,
-				441F194B8F9815BBC09CC75B171D60B4 /* MMKV-dummy.m */,
-				37207981D4C46437C8D9C94ED9D776E0 /* MMKV-Info.plist */,
-				3D546C72C64FFFA79BD7C2C32A76F600 /* MMKV-prefix.pch */,
-				4E4ED5342846E3C20C227C574BE5C6A0 /* MMKV-umbrella.h */,
-				35E003CC510B845FC87DF410606A1F63 /* MMKV.debug.xcconfig */,
-				7217C4A8863B6020C4622D41B8488D17 /* MMKV.release.xcconfig */,
+				7FFF35E0E90E256150C3FCAA3069FBB6 /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MMKV";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C02419EFCAC0E72FF5F2F4E13E80A836 /* Pods */ = {
+		B99DE53177DE7A1563B123C28F707295 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				913FE019404FB00631DD643F1374A474 /* MMKV */,
-				C38BBB714671F597AED3A856F5D07E0B /* MMKVCore */,
+				36D8AB81538E8AE10E03766903E42E7F /* Kingfisher */,
+				E720C95B150E406EF7844942E0EB8955 /* MMKV */,
+				3170F0D7112406AEEBCFF115D93B3599 /* MMKVCore */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		C38BBB714671F597AED3A856F5D07E0B /* MMKVCore */ = {
-			isa = PBXGroup;
-			children = (
-				556B70D922C173020EB617AACA9B460F /* AESCrypt.cpp */,
-				C348C0BDD7DC4425A1A2F2444BF86661 /* AESCrypt.h */,
-				B5D9CFDF12CC42F45D5441B5D6DA2CE3 /* Checksum.h */,
-				852E4B0B21E665FA21B32A7416C4CEAF /* CodedInputData.cpp */,
-				ECED935591797B429CBDA82C86D9936C /* CodedInputData.h */,
-				ACEDEF71FCCAB9B97853E9934A8B1DC9 /* CodedInputData_OSX.cpp */,
-				39479E0EC9D30F1688546FB5B4B63377 /* CodedInputDataCrypt.cpp */,
-				273EB56BD8C4AC4A10CAB0464EABFA03 /* CodedInputDataCrypt.h */,
-				20B60278100CBD92AF5A55A81245E7A3 /* CodedInputDataCrypt_OSX.cpp */,
-				2B24C60518DCDEE7B313B83B5A3BB5EF /* CodedOutputData.cpp */,
-				A7CAA4D11EB62EEBEA4939B488925B67 /* CodedOutputData.h */,
-				C97DA7F8B3023DAAA2BCA7766388FE8B /* InterProcessLock.cpp */,
-				6E82853BC38DF1945453E8BD52C1FD29 /* InterProcessLock.h */,
-				D4875D4843B9968DD9471DD58EF7E61F /* InterProcessLock_Android.cpp */,
-				41B0A424786AB5DF30EB281AA17CFCCE /* InterProcessLock_Win32.cpp */,
-				BA3691EC786D57AB153F35187AA86079 /* KeyValueHolder.cpp */,
-				2A9F89F00CE8BDE21D03DCC1D6AF7DED /* KeyValueHolder.h */,
-				7FB198B4FAC305CB1F2F55E3055CC814 /* MemoryFile.cpp */,
-				7B5B1076B0F0513763148EEBBEB09B80 /* MemoryFile.h */,
-				23F02FA3E51162C1DDC667B01B9C3918 /* MemoryFile_Android.cpp */,
-				3AE9AC026E53F57DBF0C2040176FB56D /* MemoryFile_Linux.cpp */,
-				69927B903EAE3DD56BD5ED102FE314FA /* MemoryFile_OSX.cpp */,
-				35660BD6027C06E7CD92429E00ACC239 /* MemoryFile_Win32.cpp */,
-				23D03C4F5EF25B4A15712DDED423CC6A /* MiniPBCoder.cpp */,
-				CD2158F824E1912ED124597E53B1B57C /* MiniPBCoder.h */,
-				FCDB659DEDDE7BA02FC4C040656C0C78 /* MiniPBCoder_OSX.cpp */,
-				EC4651827D08DC1AC6955FE7DDB7A726 /* MMBuffer.cpp */,
-				74FCAED5A504CE87844E1C91E8AA80AD /* MMBuffer.h */,
-				24F21975DC79289239987B27FABDBD42 /* MMKV.cpp */,
-				BA8BD874590BF8E42CD036B1DBBBDF3D /* MMKV.h */,
-				890144D6DC40251AECBB932ED593BA90 /* MMKV_Android.cpp */,
-				1CAF1B0DE3CBE839F8D56922AB99A0A3 /* MMKV_IO.cpp */,
-				09246CC381E7811DCB4EDBD8FD0C9B0C /* MMKV_IO.h */,
-				885AA493B1D5728259334D31B2E06E9A /* MMKV_OSX.cpp */,
-				358629785AB8B48F427AD00FA3768E20 /* MMKV_OSX.h */,
-				56332C5E96C2B64FCF5AE14AF8A42AC4 /* MMKVLog.cpp */,
-				5556F5E5788DBD18642119B992EB362E /* MMKVLog.h */,
-				8052FD1702C4C78CFBBD798ECF61ECD7 /* MMKVLog_Android.cpp */,
-				3D3B8014933E8D48F71F777DA8A49AB7 /* MMKVMetaInfo.hpp */,
-				FCF5A8EDED0799A02E38EB98EE368BC3 /* MMKVPredef.h */,
-				E09CD10F5156F907E952F010D7699B1A /* openssl_aes.h */,
-				74B93E121865C4E06FBB4AE08D78B15A /* openssl_aes-armv4.S */,
-				92432A88F8275E5E8F6A03D97214A035 /* openssl_aes_core.cpp */,
-				3EC1D2C89D859AC795D671A5B0A5366B /* openssl_aes_locl.h */,
-				0B8FB9216A654E3DC4B0250C7E0C3EC2 /* openssl_aesv8-armx.S */,
-				A5CA1EC73B489D8A71E737C8FF7D2CCF /* openssl_arm_arch.h */,
-				9F259D321208F8048951777F524AE3FA /* openssl_cfb128.cpp */,
-				1F3BF22A7E6FEDC402F64183C6100E8F /* openssl_md32_common.h */,
-				F2194DD7A435F4E30B2144845F359454 /* openssl_md5.h */,
-				3F05C227493AEF53FDF8FD8ECFBD896B /* openssl_md5_dgst.cpp */,
-				C4A5AAFCF14D22841FCE55FB198BC283 /* openssl_md5_locl.h */,
-				90083D637DA1ADE1E6987F0BA0A1B74C /* openssl_md5_one.cpp */,
-				5C1E59B3556FACAF00AF10892C743FE2 /* openssl_opensslconf.h */,
-				080E06AD063E329F6B75CC7417BB7600 /* PBEncodeItem.hpp */,
-				D7CBC8976BB0D3B09C8E17D78DD93DAF /* PBUtility.cpp */,
-				7F7B9F6F17F5595C47783833AEA8EADA /* PBUtility.h */,
-				0D064B528B2266444AD0BEDE12F85D1C /* ScopedLock.hpp */,
-				0A86418F5A2B652A685AA7C17D045D0C /* ThreadLock.cpp */,
-				5763C0EB03DC12D6B7853AD989241B76 /* ThreadLock.h */,
-				48078B926FF245FB3799F5DEBF63B3F5 /* ThreadLock_Win32.cpp */,
-				40AC497E2EE3B5E2C1B494CBEB43F01B /* Support Files */,
-			);
-			name = MMKVCore;
-			path = MMKVCore;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -479,11 +702,23 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				313FE5FE915A4A924C55AAC02A910D61 /* Development Pods */,
-				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
-				C02419EFCAC0E72FF5F2F4E13E80A836 /* Pods */,
-				A12E12EC2A48582A9B8CE08AA71593D6 /* Products */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				B99DE53177DE7A1563B123C28F707295 /* Pods */,
+				B601A3266FD0E886384B5FA8B1CD0776 /* Products */,
 				11C970DEAE48C6D0282DFE54684F53F1 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		E720C95B150E406EF7844942E0EB8955 /* MMKV */ = {
+			isa = PBXGroup;
+			children = (
+				95185A35FC665FA57CF47F0388DC3228 /* libMMKV.mm */,
+				3B0D06D4E880C1AB81202A7701301043 /* MMKV.h */,
+				CA4C1141DE3DE26C65164DBFDEB3A611 /* MMKVHandler.h */,
+				612BE4E724DD8E68658A4A25AA059853 /* Support Files */,
+			);
+			name = MMKV;
+			path = MMKV;
 			sourceTree = "<group>";
 		};
 		EEF3277DCE2E4B31CF76A57AB68C2BA1 /* shared */ = {
@@ -510,46 +745,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EC6D040E869AEB3DABF9C43BC2EAB55 /* Headers */ = {
+		729919770B08CB496EF181033C2748EB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A8B00E1DD889E73F388AA54CD80C9F1 /* AESCrypt.h in Headers */,
-				61934F2757BD67A2FA227DF11BC7DFB8 /* Checksum.h in Headers */,
-				F4E4E90648441123E22580C55F5302E0 /* CodedInputData.h in Headers */,
-				B3C79668A49808B49EBCBA35B3FC0753 /* CodedInputDataCrypt.h in Headers */,
-				97741EBA7BD4FF28E29F6B3CE4196580 /* CodedOutputData.h in Headers */,
-				F9FB780FCD99AC6B6014DA80387FA3EE /* InterProcessLock.h in Headers */,
-				1FF6594E51B845C1BA698119B2886E49 /* KeyValueHolder.h in Headers */,
-				CB604E7A9016BA4B2F258B1625F85923 /* MemoryFile.h in Headers */,
-				0F2A2F407B5608929A82C4F809DB6DEA /* MiniPBCoder.h in Headers */,
-				8DABD2B70E2D4B63E55F38696034DEE8 /* MMBuffer.h in Headers */,
-				49A261CB241970A8C9ABE296399AE106 /* MMKV.h in Headers */,
-				FFF602D9485E5B43DC99624725828EBF /* MMKV_IO.h in Headers */,
-				50D953692D63E5321EC2D959F9EABA1A /* MMKV_OSX.h in Headers */,
-				BF2BAD14CDD12ECB96978E81AB02B8DA /* MMKVCore-umbrella.h in Headers */,
-				E5DD6F657F58C1F5EF5DECA058B61D17 /* MMKVLog.h in Headers */,
-				B8C1560E1EEB59330FBE499736667A3A /* MMKVMetaInfo.hpp in Headers */,
-				677A07D691611DB8608952044F3F3915 /* MMKVPredef.h in Headers */,
-				8200C24A4C3DDAD66F04C8C9A15E7151 /* openssl_aes.h in Headers */,
-				34E0C6B90DE94B36155B14479D784CF3 /* openssl_aes_locl.h in Headers */,
-				D77149FDA6895D6662DB55B7FADBC87F /* openssl_arm_arch.h in Headers */,
-				92F562D8470E3EC32D1CCE6FB04AB2EC /* openssl_md32_common.h in Headers */,
-				6A412AD6971C8AC96A36AD31D66FED03 /* openssl_md5.h in Headers */,
-				B9B45570BC5BD1DCF7077EA1E23F0BD8 /* openssl_md5_locl.h in Headers */,
-				577AE73860C448FD6E3B456B438F342D /* openssl_opensslconf.h in Headers */,
-				4EE300735D32C734809D067F2BED1721 /* PBEncodeItem.hpp in Headers */,
-				9F48DF9FEDD3D701DC65AE7BDF16F6CB /* PBUtility.h in Headers */,
-				5249C0561C035BC9BC918C1B30737BD2 /* ScopedLock.hpp in Headers */,
-				455168460203D54E2A84F898475412AA /* ThreadLock.h in Headers */,
+				B264FE667D66D9F9FDA72246FB81D67E /* AESCrypt.h in Headers */,
+				E35DA34892AB440B8862B08B10035C99 /* Checksum.h in Headers */,
+				C3A7B9C94303B14367B0DFAAD9F8E806 /* CodedInputData.h in Headers */,
+				051C4DB01D3E5D8B81CDC3884E34047D /* CodedInputDataCrypt.h in Headers */,
+				959F68102EDF703F7EE11AD9E6057888 /* CodedOutputData.h in Headers */,
+				FE50FC4952C244B05D7327D28B73077D /* InterProcessLock.h in Headers */,
+				5EE1FC0AD1E7539979406E33C3DB612C /* KeyValueHolder.h in Headers */,
+				BD98539C1B06E6F43BFFE2487EF0E6A2 /* MemoryFile.h in Headers */,
+				11E04B991E5F80E31DF0092FD5E9F5A8 /* MiniPBCoder.h in Headers */,
+				D12DD90E0C8B8E6450C9188E60C0B518 /* MMBuffer.h in Headers */,
+				C29C517A0440C8C4E0F31A521A99B1FA /* MMKV.h in Headers */,
+				4D5A9D2E06341AB81386B2C644A13BC1 /* MMKV_IO.h in Headers */,
+				0BE186032123A1253AF467135FCEF4EB /* MMKV_OSX.h in Headers */,
+				6ABEB6C322BD53141A2B2B7A97A66CEC /* MMKVCore-umbrella.h in Headers */,
+				E3079409DCD6395DC8BD6F8947608BD7 /* MMKVLog.h in Headers */,
+				8F5E5A20FB27220EE6A3F9342C6B4CDB /* MMKVMetaInfo.hpp in Headers */,
+				F2F4C676A9C1D762077F21BFA40883D4 /* MMKVPredef.h in Headers */,
+				3193CB7904F1EBE03DEFF97E1BD7EC2E /* openssl_aes.h in Headers */,
+				9142FF167AB1AE2D132509A678A083E6 /* openssl_aes_locl.h in Headers */,
+				5D668C05B3E47AF6602AA148611EFB95 /* openssl_arm_arch.h in Headers */,
+				E2E48BA6BE1A08EDD702A26A4CE9A7F9 /* openssl_md32_common.h in Headers */,
+				FC9188D1EEA88CA4F8C0E9CF57076F07 /* openssl_md5.h in Headers */,
+				5F2D0462483CC21C3C7624BE4FFCDDAA /* openssl_md5_locl.h in Headers */,
+				0C9C834BDB19F984933ECC83E8264B96 /* openssl_opensslconf.h in Headers */,
+				50B37D2BD3DD657EBCD09AC7DFEB351A /* PBEncodeItem.hpp in Headers */,
+				AF49049493CCA5472745B0F2AB7DCEBC /* PBUtility.h in Headers */,
+				DF1BE54D3896116F9FE82E71315B7540 /* ScopedLock.hpp in Headers */,
+				8434B8ADFB06E007D9BE7E376720E028 /* ThreadLock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A45ADA70D389C24CFFB5663DB838613 /* Headers */ = {
+		EF1029763157EF51C81A5E6BB2C5BF59 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60128F7A9CB52198368A683BC19805D8 /* Pods-iosApp-umbrella.h in Headers */,
+				35B403E7FC9272011F2EBF0D78F10562 /* Kingfisher.h in Headers */,
+				493723BE23B91AAC551EF6C4B23C8BB1 /* Kingfisher-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAEEC22779166CB130B838B77D249F75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585BC8ADEB492E9BD406A819E5A69BCE /* Pods-iosApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +812,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FD9CAA93B438FB1C7B3CCFEA52350EB0 /* PBXTargetDependency */,
+				6760C50C2012676C33FA4483BCF6DF68 /* PBXTargetDependency */,
 			);
 			name = MMKV;
 			productName = MMKV;
@@ -577,12 +821,12 @@
 		};
 		AC8AE887C706A43711D115E69B9D988A /* MMKVCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46225EB35330DCBD82C3BEC62C6E6B3F /* Build configuration list for PBXNativeTarget "MMKVCore" */;
+			buildConfigurationList = 2C9F45EA5C52E2797DA4A7B499B7A370 /* Build configuration list for PBXNativeTarget "MMKVCore" */;
 			buildPhases = (
-				8EC6D040E869AEB3DABF9C43BC2EAB55 /* Headers */,
-				EC40BE7D459B029FB2F50C9DF94C5B8A /* Sources */,
-				EDEEDEEFB2B78D7736DBC31E51FC5ABD /* Frameworks */,
-				D4F02DDE97D729C1B7FA338ADC350186 /* Resources */,
+				729919770B08CB496EF181033C2748EB /* Headers */,
+				5696F7C3DA2D3760DFC2A820618CC6B7 /* Sources */,
+				FB9AB980112668D2A4EC081A744CB560 /* Frameworks */,
+				C88D7580B44ACE89300F31F8F213F6ED /* Resources */,
 			);
 			buildRules = (
 			);
@@ -593,21 +837,40 @@
 			productReference = E0B603F54009DAEF6C3BAAE621E5F180 /* MMKVCore */;
 			productType = "com.apple.product-type.framework";
 		};
-		ED39C638569286489CD697A6C8964146 /* Pods-iosApp */ = {
+		E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1C78A084D98A4B2B2D57986F75A92BCE /* Build configuration list for PBXNativeTarget "Pods-iosApp" */;
+			buildConfigurationList = 7918688F07785A6582909DF31A7931B2 /* Build configuration list for PBXNativeTarget "Kingfisher" */;
 			buildPhases = (
-				9A45ADA70D389C24CFFB5663DB838613 /* Headers */,
-				5C1519FBB949676B1CC74D29F2CBE4FA /* Sources */,
-				9CA83077F663A4437B0098788B59A4A4 /* Frameworks */,
-				F5A41981A1D607D2A32B205D94FB24C3 /* Resources */,
+				EF1029763157EF51C81A5E6BB2C5BF59 /* Headers */,
+				C0B693F317A077CD4378CDDB078B8C16 /* Sources */,
+				002F14E87B3FA02F67D11C59A57C5120 /* Frameworks */,
+				D901219C4328B1486729E992E185931C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AA56A7714AD67D466CE9881D4C04F1AD /* PBXTargetDependency */,
-				EFE18A35977F0A5CBE202494DCCA31E5 /* PBXTargetDependency */,
-				6CF89CD97F6D11B2B7D41F33CFAF732E /* PBXTargetDependency */,
+			);
+			name = Kingfisher;
+			productName = Kingfisher;
+			productReference = C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED39C638569286489CD697A6C8964146 /* Pods-iosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F878B53DD6E34EDFEA1CCD5490A7643 /* Build configuration list for PBXNativeTarget "Pods-iosApp" */;
+			buildPhases = (
+				FAEEC22779166CB130B838B77D249F75 /* Headers */,
+				020C4ABEB55840FAC706167486AED06D /* Sources */,
+				13EA384F838787742B3C6AB95CF445B6 /* Frameworks */,
+				D23CB6D302729D0D8C4928339C2FAA07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73886C516BA53408D3A1C3682FA18348 /* PBXTargetDependency */,
+				E89DDC0D310DD88B85038E0509DA18A0 /* PBXTargetDependency */,
+				1858CCF8C85BCB48134A26C68F8141C1 /* PBXTargetDependency */,
+				4FBE502774B64434A44DBA094DC29106 /* PBXTargetDependency */,
 			);
 			name = "Pods-iosApp";
 			productName = Pods_iosApp;
@@ -632,10 +895,11 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = A12E12EC2A48582A9B8CE08AA71593D6 /* Products */;
+			productRefGroup = B601A3266FD0E886384B5FA8B1CD0776 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */,
 				91A6826828CB9FCD0169A7547E8A79EA /* MMKV */,
 				AC8AE887C706A43711D115E69B9D988A /* MMKVCore */,
 				ED39C638569286489CD697A6C8964146 /* Pods-iosApp */,
@@ -652,14 +916,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4F02DDE97D729C1B7FA338ADC350186 /* Resources */ = {
+		C88D7580B44ACE89300F31F8F213F6ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5A41981A1D607D2A32B205D94FB24C3 /* Resources */ = {
+		D23CB6D302729D0D8C4928339C2FAA07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D901219C4328B1486729E992E185931C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -682,6 +953,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		020C4ABEB55840FAC706167486AED06D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FFB147303945177933AD3182615E76A /* Pods-iosApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		446125A51EDC536E9466FF6701C1978B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -691,128 +970,149 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C1519FBB949676B1CC74D29F2CBE4FA /* Sources */ = {
+		5696F7C3DA2D3760DFC2A820618CC6B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D49069A73C555472F48FA24382A24D1 /* Pods-iosApp-dummy.m in Sources */,
+				E0A34EF936A571977A2A54405AD717A6 /* AESCrypt.cpp in Sources */,
+				D3AB8E74601833697D8CC70C9D6C6665 /* CodedInputData.cpp in Sources */,
+				34CCAB609C7C333A0C055991ACE70941 /* CodedInputData_OSX.cpp in Sources */,
+				9C106A45EE400E7D03B16480F9F7B51C /* CodedInputDataCrypt.cpp in Sources */,
+				40EC9BD89212118167DE586E7E92F36F /* CodedInputDataCrypt_OSX.cpp in Sources */,
+				127A600063D04D1625F4B66EB430A65C /* CodedOutputData.cpp in Sources */,
+				FB95EE2F3E0D8EEC4FA5388A559AEC03 /* InterProcessLock.cpp in Sources */,
+				27DEF194338AE8758F477B610F13DB92 /* InterProcessLock_Android.cpp in Sources */,
+				D1BAF9C423177ED0F8B17A53DFAF7DCC /* InterProcessLock_Win32.cpp in Sources */,
+				DDA06C187181D5D109315A62561F6E08 /* KeyValueHolder.cpp in Sources */,
+				4C6A00CB18CF4127BA9B273F99D1B9AE /* MemoryFile.cpp in Sources */,
+				D69856385559F36E79720C0EE60A3D5E /* MemoryFile_Android.cpp in Sources */,
+				CB3502259E16D23A33F708824B64937B /* MemoryFile_Linux.cpp in Sources */,
+				79A04131E776D7ED51D429A77D9966FF /* MemoryFile_OSX.cpp in Sources */,
+				DC2007FC7D626C1E875E803F9CA8D0BC /* MemoryFile_Win32.cpp in Sources */,
+				A5DDD9EA715BB84720239CA16B9128A6 /* MiniPBCoder.cpp in Sources */,
+				5114672D9459D80D164E0B719CBD2868 /* MiniPBCoder_OSX.cpp in Sources */,
+				FE3F5A36F9421B030FF24DD449EA774B /* MMBuffer.cpp in Sources */,
+				D40A14BBF87CB5634D61EDEAF6E0B5D2 /* MMKV.cpp in Sources */,
+				449BF5B454DF3A5699961A611AC3B4AB /* MMKV_Android.cpp in Sources */,
+				FC19614DE285D46B002CF1B998FC3DB2 /* MMKV_IO.cpp in Sources */,
+				36C23D34783E1A01F073BA4EEA0E30C1 /* MMKV_OSX.cpp in Sources */,
+				EA27942D77EF7DB73974F95F4DBC8668 /* MMKVCore-dummy.m in Sources */,
+				A14EA62771888561A09A1BC00B3E6B29 /* MMKVLog.cpp in Sources */,
+				9890E56FFC29C35E13E0B0CC3FA0777F /* MMKVLog_Android.cpp in Sources */,
+				CEAE50C20C8DBB0F40455B0EC82AB5B6 /* openssl_aes-armv4.S in Sources */,
+				0F418628969A68F2DB300575CB0F0404 /* openssl_aes_core.cpp in Sources */,
+				6E3112D2AD2B25B98117C8E9A5463442 /* openssl_aesv8-armx.S in Sources */,
+				5A6E3953D7043133044D0D461907DD5C /* openssl_cfb128.cpp in Sources */,
+				D15F76E7BE265287E3C0992BC65AC34E /* openssl_md5_dgst.cpp in Sources */,
+				F19FE1B07DAF13F2C5C54DC16802E3E7 /* openssl_md5_one.cpp in Sources */,
+				BA36C0E9370B15FF54A1B21C6808CD0D /* PBUtility.cpp in Sources */,
+				4F8624542F01AF5E144E718E8523617C /* ThreadLock.cpp in Sources */,
+				33B2D973628B2A4192841B455B35C054 /* ThreadLock_Win32.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC40BE7D459B029FB2F50C9DF94C5B8A /* Sources */ = {
+		C0B693F317A077CD4378CDDB078B8C16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EB05D2733C9B0F167ABA8DE8F90B9E7 /* AESCrypt.cpp in Sources */,
-				A25CC1730DA19189B81F87C0521BCD25 /* CodedInputData.cpp in Sources */,
-				5FC1B0E3ABE1A6C175F5DD695D193BBD /* CodedInputData_OSX.cpp in Sources */,
-				76E1CC65B4A9E1C3CC1884A61FC07A95 /* CodedInputDataCrypt.cpp in Sources */,
-				46D45E238B10BD1A617673DDA1BD8CCC /* CodedInputDataCrypt_OSX.cpp in Sources */,
-				4FA1F34052D530AA6798490FDE1C5DBE /* CodedOutputData.cpp in Sources */,
-				E876106D1681A90BDA60770949DF6FA8 /* InterProcessLock.cpp in Sources */,
-				9E8D189DEAB0DC81EF19BFE9BF6AA66B /* InterProcessLock_Android.cpp in Sources */,
-				E438EC943A23021B66652013F7675A7D /* InterProcessLock_Win32.cpp in Sources */,
-				A29DF5D7D1D0A4DFAC2760038BCF67B2 /* KeyValueHolder.cpp in Sources */,
-				E792400F64716BDE8C6C2F9FD319C5CB /* MemoryFile.cpp in Sources */,
-				7275F2B59BBD1C347850E9D54AC5A01B /* MemoryFile_Android.cpp in Sources */,
-				D1026F3F90D929EB268E8FC98ABB678B /* MemoryFile_Linux.cpp in Sources */,
-				8BC013E538C5C1E394A9E6F91590956F /* MemoryFile_OSX.cpp in Sources */,
-				55A278C7DA1F7EE27F5063CD80BD462B /* MemoryFile_Win32.cpp in Sources */,
-				EE3F736CFB739E108324DFF49F9C13DB /* MiniPBCoder.cpp in Sources */,
-				5A058E3853550903FA77942468B684AA /* MiniPBCoder_OSX.cpp in Sources */,
-				5F4B42754031DBDC4858F1678C6C8103 /* MMBuffer.cpp in Sources */,
-				1CE00779AD5A0F16703515D601288F0B /* MMKV.cpp in Sources */,
-				FAC67972DED2C54A4894352DE44275D3 /* MMKV_Android.cpp in Sources */,
-				2642286359E9873B7C05049D566C25EA /* MMKV_IO.cpp in Sources */,
-				8CFA333D09818F63038A5C0EFDACBA07 /* MMKV_OSX.cpp in Sources */,
-				08CDBB15566590219C091588F9F16F02 /* MMKVCore-dummy.m in Sources */,
-				C0C923827A7F4838393204AF8C6C4EA4 /* MMKVLog.cpp in Sources */,
-				4A59889B815A4711C2276454FA35758D /* MMKVLog_Android.cpp in Sources */,
-				E70FCBC3B529D3B33830E26860330353 /* openssl_aes-armv4.S in Sources */,
-				0478D2213A2119998DDDD13D41847DC0 /* openssl_aes_core.cpp in Sources */,
-				E2C859433206E9188B3FB5C53C7B416D /* openssl_aesv8-armx.S in Sources */,
-				A63ED8AB2EA0A0A1FCBD7A6126F7AF4A /* openssl_cfb128.cpp in Sources */,
-				E1779F090AB8A44197ACEF4CB8FFBC7D /* openssl_md5_dgst.cpp in Sources */,
-				136C83E8CDEEF9A59A0AF4F92E75859B /* openssl_md5_one.cpp in Sources */,
-				A37BC4689CB4785952F0E3F757DC0158 /* PBUtility.cpp in Sources */,
-				65FE362134DEB0835A5BA2C02DC5AB52 /* ThreadLock.cpp in Sources */,
-				A1DC4CB6CE163627CE2213B5BEB18199 /* ThreadLock_Win32.cpp in Sources */,
+				59A4A2087B1AA854A183DB108C76D4A2 /* AnimatedImageView.swift in Sources */,
+				6CF7B38133FEFD6610972F085D2CEAE6 /* AuthenticationChallengeResponsable.swift in Sources */,
+				CEB9F408A7A7681BFACDAEA944718918 /* AVAssetImageDataProvider.swift in Sources */,
+				0F3384B00E5BBBBE60AF9C91EF36B745 /* Box.swift in Sources */,
+				398B7AAF46E6934A75BACD8DC9221492 /* CacheSerializer.swift in Sources */,
+				990C09669490CC02149832C301B8E84A /* CallbackQueue.swift in Sources */,
+				F1381CAD327263C186E0D740D79EC238 /* Delegate.swift in Sources */,
+				2B3CCBC0B2D345A8F9747F2EE694575C /* Deprecated.swift in Sources */,
+				2781E32E615BC3765D86EECA82DC5417 /* DiskStorage.swift in Sources */,
+				0C04E5D23D8493BD6C7DC54E23535A5F /* ExtensionHelpers.swift in Sources */,
+				4B118B628C3E9E2A88500CDFA8A2CBA2 /* Filter.swift in Sources */,
+				A28A38A5879DC068C879A4E3436BE79C /* FormatIndicatedCacheSerializer.swift in Sources */,
+				0951211B9D35E2FD51B9B83B15CABFF9 /* GIFAnimatedImage.swift in Sources */,
+				C6E38F4448308A3705264846D49FDB93 /* Image.swift in Sources */,
+				107A28EB546D04115F1A06CCAFB2ACD6 /* ImageBinder.swift in Sources */,
+				C8906866853EBA15B983AF444C9C65AF /* ImageCache.swift in Sources */,
+				1962578E88916DC0D8626A49CC289522 /* ImageDataProcessor.swift in Sources */,
+				8B9AB5C14DB52933EE9B8CE7E02E98D9 /* ImageDataProvider.swift in Sources */,
+				EC6D92164B40A09235F8F6DE0CC2B98E /* ImageDownloader.swift in Sources */,
+				098DF1052657717ACF953A92B3F6E7B0 /* ImageDownloaderDelegate.swift in Sources */,
+				E753631A94E85697D20851080C7E81A2 /* ImageDrawing.swift in Sources */,
+				3684CF2A5950F1953C3272ACD34D8EF3 /* ImageFormat.swift in Sources */,
+				56A68C3AA2C5E92510D2D0A4980E2612 /* ImageModifier.swift in Sources */,
+				C3CEB5A53E35178E08971038C7795D97 /* ImagePrefetcher.swift in Sources */,
+				82661CB4C1A218830A0819B9CE79FD8A /* ImageProcessor.swift in Sources */,
+				899E31C4584591A2AD2F7940B2753F81 /* ImageProgressive.swift in Sources */,
+				39BB782A95CC86E0464004A0B8CFF3A3 /* ImageTransition.swift in Sources */,
+				D8A12374F09D5683E9E5714C880D4564 /* ImageView+Kingfisher.swift in Sources */,
+				A75DBB735E37FF47FCD0C063BB59288C /* Indicator.swift in Sources */,
+				481D28A06FD6CDE4FB51C55D8479242C /* KFImage.swift in Sources */,
+				6DFD4BACE67081E44FF7A1FD214F4FBD /* Kingfisher.swift in Sources */,
+				12F6B754C2DE3BA34697BC55440A7280 /* Kingfisher-dummy.m in Sources */,
+				532841F086C2BCED8040E58F7B2A57BF /* KingfisherError.swift in Sources */,
+				F6945D7465F7950EBAEBE6AEFE3AD194 /* KingfisherManager.swift in Sources */,
+				6F9E88C218834EF5551273069B9483CF /* KingfisherOptionsInfo.swift in Sources */,
+				0C4EF30069CD11D8BCF388D9CB46521A /* MemoryStorage.swift in Sources */,
+				77276875F5BFB8B09C05AF5067E03E91 /* NSButton+Kingfisher.swift in Sources */,
+				551B5D47AAE4959BD508CF97469A40C9 /* NSTextAttachment+Kingfisher.swift in Sources */,
+				6BBEEEB3412E95F6485A88F2725ECC79 /* Placeholder.swift in Sources */,
+				A359423A72FA365E3D80879029120ADC /* RedirectHandler.swift in Sources */,
+				3BFD1B3957FFE04A1681E546BE929BB9 /* RequestModifier.swift in Sources */,
+				43D96052F6B2F9B2EE7E2E5054B294D2 /* Resource.swift in Sources */,
+				69C803BC3DDC70F315F16BB6D1B99CB8 /* Result.swift in Sources */,
+				7FE3E2F3D8661627239A41A17FE097C6 /* RetryStrategy.swift in Sources */,
+				72429CBDA284C99C52130D11726262C9 /* Runtime.swift in Sources */,
+				AEEE227D932A5AF668E547E232B1B8D7 /* SessionDataTask.swift in Sources */,
+				D1569E02F41A19E035D35A3EBE592E52 /* SessionDelegate.swift in Sources */,
+				2D7824D1B6FE905781D0661519711BC7 /* SizeExtensions.swift in Sources */,
+				BC0A0F30E960D5FF00A1E67A864316FA /* Source.swift in Sources */,
+				22B87B0ABB439B7BEE4472883ACAFC5C /* Storage.swift in Sources */,
+				CABE44703FBEBE1D96DFB0F2493846A3 /* String+MD5.swift in Sources */,
+				65CDD7263A7F38CD1C3A6450F68F2567 /* UIButton+Kingfisher.swift in Sources */,
+				40C49C47754D746EB5A36AFB6B56FFD1 /* WKInterfaceImage+Kingfisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6CF89CD97F6D11B2B7D41F33CFAF732E /* PBXTargetDependency */ = {
+		1858CCF8C85BCB48134A26C68F8141C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMKVCore;
+			target = AC8AE887C706A43711D115E69B9D988A /* MMKVCore */;
+			targetProxy = 891CB09712CE49EA97E813A378C5A4D2 /* PBXContainerItemProxy */;
+		};
+		4FBE502774B64434A44DBA094DC29106 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = shared;
 			target = 8777C9F6889E59EFFD631D80AEE9048B /* shared */;
-			targetProxy = 9BCC1BF829110A1D8240F5DF476474D9 /* PBXContainerItemProxy */;
+			targetProxy = 066DF9CF4230ADDE9EBA6BC072677191 /* PBXContainerItemProxy */;
 		};
-		7563ABA5C4C186B0F4ABB57CF4853767 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MMKV;
-			target = 91A6826828CB9FCD0169A7547E8A79EA /* MMKV */;
-			targetProxy = CAE0EA31A6393200F99D854A4529B530 /* PBXContainerItemProxy */;
-		};
-		AA56A7714AD67D466CE9881D4C04F1AD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MMKV;
-			target = 91A6826828CB9FCD0169A7547E8A79EA /* MMKV */;
-			targetProxy = 3C3A03D8AE1AB342BCBB894F390D5CC6 /* PBXContainerItemProxy */;
-		};
-		EFE18A35977F0A5CBE202494DCCA31E5 /* PBXTargetDependency */ = {
+		6760C50C2012676C33FA4483BCF6DF68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MMKVCore;
 			target = AC8AE887C706A43711D115E69B9D988A /* MMKVCore */;
-			targetProxy = A1F61BE1A4A9918B22A7876A11486F6D /* PBXContainerItemProxy */;
+			targetProxy = D33ED3FC75511D2BE4BC9FBCFEFB0163 /* PBXContainerItemProxy */;
 		};
-		FD9CAA93B438FB1C7B3CCFEA52350EB0 /* PBXTargetDependency */ = {
+		73886C516BA53408D3A1C3682FA18348 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MMKVCore;
-			target = AC8AE887C706A43711D115E69B9D988A /* MMKVCore */;
-			targetProxy = 2D4AB61095B01F63BB08BCCB8AC1CDDA /* PBXContainerItemProxy */;
+			name = Kingfisher;
+			target = E8022D22FAA6690B5E1C379C1BCE1491 /* Kingfisher */;
+			targetProxy = 6A31003FED78C393DE0E6D20B6BE4224 /* PBXContainerItemProxy */;
+		};
+		9880B0FDBDEF9EE6EB24239E71341C9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMKV;
+			target = 91A6826828CB9FCD0169A7547E8A79EA /* MMKV */;
+			targetProxy = DCE5BF7627EE668D4FB8AEF4966CB6A2 /* PBXContainerItemProxy */;
+		};
+		E89DDC0D310DD88B85038E0509DA18A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMKV;
+			target = 91A6826828CB9FCD0169A7547E8A79EA /* MMKV */;
+			targetProxy = A05B2D79FCDC7C0EAB8CABF51FF173B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		19B5338B8132B7F7E808724406601746 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F64BADB16C311E9D09DAD0116F684F4 /* Pods-iosApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1A189D8D2F4870C2010C868987D50FCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95B09EA82E7AF9ACCCCAF3E55C859116 /* shared.debug.xcconfig */;
@@ -830,46 +1130,10 @@
 			};
 			name = Debug;
 		};
-		3508E6C41A215AD89DD7E0F40C537963 /* Release */ = {
+		51A9A4B47CC42D990DBF9BCA0813A850 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04BADA27FAC08B6FD2CCEE29327F802A /* MMKVCore.release.xcconfig */;
+			baseConfigurationReference = CB5C284E2937B561F24A522B89EA71BE /* Kingfisher.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MMKVCore/MMKVCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMKVCore/MMKVCore-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MMKVCore/MMKVCore.modulemap";
-				PRODUCT_MODULE_NAME = MMKVCore;
-				PRODUCT_NAME = MMKVCore;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4BF05600B04A359EC91899076122E06D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FECCB5AFF87D121F15BA01E683C7932 /* Pods-iosApp.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -879,23 +1143,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher/Kingfisher-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
+				PRODUCT_MODULE_NAME = Kingfisher;
+				PRODUCT_NAME = Kingfisher;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -965,6 +1228,112 @@
 			};
 			name = Release;
 		};
+		80A47973585BF5C2B21C70C9DA727058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6F85A061F65B05797175DC4EA30C29C /* MMKVCore.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMKVCore/MMKVCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMKVCore/MMKVCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MMKVCore/MMKVCore.modulemap";
+				PRODUCT_MODULE_NAME = MMKVCore;
+				PRODUCT_NAME = MMKVCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		851808D4A256C4FAC64651580926E9A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B126C8D4EF47411764B5600F66D7BCA9 /* MMKVCore.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MMKVCore/MMKVCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMKVCore/MMKVCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MMKVCore/MMKVCore.modulemap";
+				PRODUCT_MODULE_NAME = MMKVCore;
+				PRODUCT_NAME = MMKVCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86F5E6C68E6595E52EE395A159B9CCA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F64BADB16C311E9D09DAD0116F684F4 /* Pods-iosApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1031,43 +1400,9 @@
 			};
 			name = Debug;
 		};
-		A7831300C2E6069A636432E53A0F4B9D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08880B9212B20036CA93ECC8972990CA /* MMKVCore.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MMKVCore/MMKVCore-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MMKVCore/MMKVCore-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MMKVCore/MMKVCore.modulemap";
-				PRODUCT_MODULE_NAME = MMKVCore;
-				PRODUCT_NAME = MMKVCore;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		B14BA86CC084AAE0CE39A61B4C37AA90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35E003CC510B845FC87DF410606A1F63 /* MMKV.debug.xcconfig */;
+			baseConfigurationReference = 4F5278FA9A6D1475352691BD6EE80332 /* MMKV.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1117,9 +1452,44 @@
 			};
 			name = Release;
 		};
+		D39B084F4D7E1E8C9AC0EF80CD73818E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C886429E4C1DCBB83FAAAE96B3BA7A /* Kingfisher.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Kingfisher/Kingfisher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kingfisher/Kingfisher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Kingfisher/Kingfisher.modulemap";
+				PRODUCT_MODULE_NAME = Kingfisher;
+				PRODUCT_NAME = Kingfisher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E19CF7A1D28C5F6699A0AAD17BCE7A62 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7217C4A8863B6020C4622D41B8488D17 /* MMKV.release.xcconfig */;
+			baseConfigurationReference = B48107BCE9EB0AFDD9A7AD170F64DBC2 /* MMKV.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1152,18 +1522,47 @@
 			};
 			name = Release;
 		};
+		F736F6E355864B9EA51311C2859518CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FECCB5AFF87D121F15BA01E683C7932 /* Pods-iosApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iosApp/Pods-iosApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C78A084D98A4B2B2D57986F75A92BCE /* Build configuration list for PBXNativeTarget "Pods-iosApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				19B5338B8132B7F7E808724406601746 /* Debug */,
-				4BF05600B04A359EC91899076122E06D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2624BF343F720DD7B5D68AF53C1C0F3D /* Build configuration list for PBXNativeTarget "MMKV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1173,11 +1572,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46225EB35330DCBD82C3BEC62C6E6B3F /* Build configuration list for PBXNativeTarget "MMKVCore" */ = {
+		2C9F45EA5C52E2797DA4A7B499B7A370 /* Build configuration list for PBXNativeTarget "MMKVCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7831300C2E6069A636432E53A0F4B9D /* Debug */,
-				3508E6C41A215AD89DD7E0F40C537963 /* Release */,
+				80A47973585BF5C2B21C70C9DA727058 /* Debug */,
+				851808D4A256C4FAC64651580926E9A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F878B53DD6E34EDFEA1CCD5490A7643 /* Build configuration list for PBXNativeTarget "Pods-iosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F5E6C68E6595E52EE395A159B9CCA0 /* Debug */,
+				F736F6E355864B9EA51311C2859518CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1196,6 +1604,15 @@
 			buildConfigurations = (
 				1A189D8D2F4870C2010C868987D50FCB /* Debug */,
 				B4D0A2EAD51C320813201FD4E13EA5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7918688F07785A6582909DF31A7931B2 /* Build configuration list for PBXNativeTarget "Kingfisher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39B084F4D7E1E8C9AC0EF80CD73818E /* Debug */,
+				51A9A4B47CC42D990DBF9BCA0813A850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

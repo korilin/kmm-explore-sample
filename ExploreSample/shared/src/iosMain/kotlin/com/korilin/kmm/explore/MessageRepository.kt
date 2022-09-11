@@ -14,4 +14,12 @@ object MessageRepository {
         val result = MessagePoster.postMessage(message)
         return result.getOrThrow()
     }
+
+    suspend fun insertRecord(record: ImageMessageRecord) {
+        MessageStorageWorker.insertMessage(record)
+    }
+
+    suspend fun removeRecord(record: ImageMessageRecord) {
+        MessageStorageWorker.removeMessageByTime(record.time)
+    }
 }

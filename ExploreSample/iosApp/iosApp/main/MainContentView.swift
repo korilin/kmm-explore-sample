@@ -1,8 +1,13 @@
+import struct Kingfisher.KFImage
 import SwiftUI
 
 struct MainContentView: View {
     
     @EnvironmentObject var viewModel: MainViewModel
+    
+    init() {
+        UITableView.appearance().backgroundColor = UIColor(AppColor.background)
+    }
     
 	var body: some View {
         VStack {
@@ -13,9 +18,10 @@ struct MainContentView: View {
             PostButton() {
                 viewModel.postMessage()
             }
-            Divider().padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+            Divider().padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+            RecordList().environmentObject(viewModel)
             Spacer()
-        }.background(Color("0xfffafafa")).padding(25)
+        }.padding(25).background(AppColor.background)
     }
 }
 
@@ -66,5 +72,52 @@ struct MessageEditor: View {
                 RoundedRectangle(cornerRadius: 5)
                     .stroke(AppColor.borderColor, lineWidth: 1)
             )
+    }
+}
+
+struct RecordList: View {
+    @EnvironmentObject var viewModel: MainViewModel
+    
+    var body: some View {
+        List {
+            ForEach(self.viewModel.records, id: \.self.time) { item in
+                VStack(alignment: HorizontalAlignment.leading) {
+                    Text(String(item.time))
+                        .font(Font.custom("date", size: 10))
+                        .foregroundColor(AppColor.secondaryTextColor)
+                    
+                    Text(item.msg)
+                        .font(Font.custom("msg", size: 10))
+                        .foregroundColor(AppColor.primaryTextColor)
+                        .padding(EdgeInsets(top: 2, leading: 0, bottom: 10, trailing: 0))
+                    
+                    HStack {
+                        Spacer()
+                        KFImage(URL(string: item.img))
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(maxWidth: .infinity)
+                        
+                        Spacer()
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(15)
+                .background(Color.white)
+                .listRowInsets(EdgeInsets())
+            
+            }.onDelete { indexSet in
+                indexSet.forEach { index in
+                    viewModel.removeRecord(index: index)
+                }
+            }
+        }
+    }
+}
+
+struct MainContentPreview: PreviewProvider {
+    
+    static var previews: some View {
+        MainContentView().environmentObject(MainViewModel())
     }
 }
