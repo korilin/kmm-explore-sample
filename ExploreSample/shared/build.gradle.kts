@@ -1,6 +1,3 @@
-import org.jetbrains.kotlin.gradle.plugin.mpp.Framework.BitcodeEmbeddingMode.BITCODE
-import org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType
-
 plugins {
     kotlin("multiplatform")
     kotlin("plugin.serialization") version "1.7.10"
@@ -19,7 +16,6 @@ kotlin {
     ).forEach {
         it.binaries {
             all {
-                val moduleName = "mmkv_operator"
                 val mmkvPath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/Pods/MMKV"
                 val mmkvCorePath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/Pods/MMKVCore"
                 linkerOpts += listOf(
@@ -67,7 +63,6 @@ kotlin {
                 dependsOn(commonMain)
                 implementation("com.squareup.okhttp3:okhttp:4.10.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
-                implementation("com.google.code.gson:gson:2.9.1")
             }
         }
         val androidTest by getting
