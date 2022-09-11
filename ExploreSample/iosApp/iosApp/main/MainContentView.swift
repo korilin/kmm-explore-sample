@@ -64,7 +64,7 @@ struct MessageEditor: View {
     var body: some View {
         TextEditor(text: self.bindingMessage)
             .frame(maxWidth:.infinity)
-            .frame(height: 100)
+            .frame(height: 80)
             .autocapitalization(.words)
             .disableAutocorrection(true)
             .padding(5)
@@ -82,7 +82,8 @@ struct RecordList: View {
         List {
             ForEach(self.viewModel.records, id: \.self.time) { item in
                 VStack(alignment: HorizontalAlignment.leading) {
-                    Text(String(item.time))
+                    let time = formatTime(timestamp: item.time)
+                    Text(String(time))
                         .font(Font.custom("date", size: 10))
                         .foregroundColor(AppColor.secondaryTextColor)
                     
@@ -109,6 +110,7 @@ struct RecordList: View {
             }.onDelete { indexSet in
                 indexSet.forEach { index in
                     viewModel.removeRecord(index: index)
+
                 }
             }
         }

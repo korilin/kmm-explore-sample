@@ -53,7 +53,7 @@ fun MainScreen(
             .fillMaxHeight()
             .fillMaxWidth(),
     ) {
-        Title(text = "Explore Sample")
+        Title(text = "Android KMM Explore Sample")
         Divider(modifier = Modifier.padding(vertical = 20.dp))
 
         EditText(

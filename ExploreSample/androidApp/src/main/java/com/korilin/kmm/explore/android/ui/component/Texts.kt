@@ -14,7 +14,7 @@ fun Title(text: String, modifier: Modifier = Modifier) = Text(
     modifier = modifier,
     color = appColors.textOnPrimary,
     fontWeight = FontWeight.Bold,
-    fontSize = 24.sp,
+    fontSize = 20.sp,
 )
 
 @Composable
