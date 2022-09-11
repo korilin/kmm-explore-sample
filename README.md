@@ -21,7 +21,7 @@
 
 两端都是用 MMKV，相关存储逻辑写在 shared 模块 [MessageStorageWorker](ExploreSample/shared/src/commonMain/kotlin/com/korilin/kmm/explore/datasource/storage/MessageStorageWorker.kt)
 
-[ctripcorp/mmkv-kotlin](https://github.com/ctripcorp/mmkv-kotlin)
+依赖链接: [ctripcorp/mmkv-kotlin](https://github.com/ctripcorp/mmkv-kotlin)
 
 ## 网络请求
 
