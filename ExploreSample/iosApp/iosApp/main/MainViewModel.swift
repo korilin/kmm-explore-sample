@@ -14,12 +14,39 @@ import shared
 class MainViewModel: ObservableObject {
     
     @Published var loading: Bool = true
-    @State var message: String = ""
-    @Published var records: [String] = Array()
+    @Published var message: String = Platform().devEnvLocalHost
+    @Published var records: [ImageMessageRecord] = Array()
     
-    let platform = Platform().platform
+    private let repository = MessageRepository()
     
+    @MainActor
+    private func runCatch(block: @escaping () async throws -> Void) {
+        Task {
+            do {
+                let _ = try await block()
+            } catch let error {
+                print(error)
+            }
+        }
+    }
+    
+    @MainActor
     func initData() {
-        
+        runCatch {
+            print(Thread.current)
+            try await self.repository.doInitData()
+            let records = try await self.repository.queryAllMessages()
+            self.records = records
+            self.loading = false
+        }
+    }
+    
+    @MainActor
+    func postMessage() {
+        runCatch {
+            let record = try await self.repository.postMessage(message: self.message)
+            self.message = ""
+            self.records.append(record)
+        }
     }
 }

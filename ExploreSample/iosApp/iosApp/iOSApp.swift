@@ -1,10 +1,17 @@
 import SwiftUI
 
 @main
-struct iOSApp: App {
+class iOSApp: App {
+    
+    let viewModel: MainViewModel
+    
+    required init() {
+        viewModel = MainViewModel()
+    }
+    
 	var body: some Scene {
 		WindowGroup {
-			MainContentView()
+            MainContentView().environmentObject(viewModel)
 		}
 	}
 }

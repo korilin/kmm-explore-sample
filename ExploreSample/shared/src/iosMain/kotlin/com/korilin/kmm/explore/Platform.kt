@@ -5,6 +5,6 @@ import platform.UIKit.UIDevice
 
 actual object Platform{
     actual val platform: String = UIDevice.currentDevice.systemName() + " " + UIDevice.currentDevice.systemVersion
-    actual val devEnvLocalHost: String ="127.0.0.1"
+    actual val devEnvLocalHost: String ="192.168.3.18"
     actual val requester: NetRequester = KtorNetRequester()
 }

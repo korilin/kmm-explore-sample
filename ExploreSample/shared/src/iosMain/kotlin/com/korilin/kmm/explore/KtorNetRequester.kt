@@ -5,6 +5,9 @@ import io.ktor.client.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
+import kotlinx.serialization.KSerializer
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 
 class KtorNetRequester : NetRequester {
 
@@ -18,11 +21,16 @@ class KtorNetRequester : NetRequester {
         }
     }
 
-    override suspend fun post(url: String, params: Map<String, Any?>): Result<String> {
+    override suspend fun <T> post(
+        url: String,
+        params: T,
+        serializer: KSerializer<T>
+    ): Result<String> {
         return kotlin.runCatching {
             val response = client.post(url) {
                 contentType(ContentType.Application.Json)
-                setBody(params)
+                val body = Json.encodeToString(serializer, params)
+                setBody(body)
             }
             response.bodyAsText()
         }

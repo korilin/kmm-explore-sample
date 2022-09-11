@@ -2,6 +2,9 @@ package com.korilin.kmm.explore
 
 import android.util.Log
 import com.korilin.kmm.explore.datasource.network.NetRequester
+import kotlinx.serialization.KSerializer
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
@@ -33,11 +36,12 @@ class OkHttpNetRequester : NetRequester {
         return doRequest(request)
     }
 
-    override suspend fun post(
+    override suspend fun <T> post(
         url: String,
-        params: Map<String, Any?>
+        params: T,
+        serializer: KSerializer<T>
     ): Result<String> {
-        val json = JSONObject(params).toString()
+        val json = Json.encodeToString(serializer, params)
         val body = json.toRequestBody(mediaType)
         Log.d("OkHttpNetRequester", "post:: $url $json")
         val request = requestBuilder(url).post(body).build()

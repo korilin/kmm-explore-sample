@@ -20,8 +20,8 @@ kotlin {
         it.binaries {
             all {
                 val moduleName = "mmkv_operator"
-                val mmkvPath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/$moduleName/build/Release/MMKV"
-                val mmkvCorePath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/$moduleName//build/Release/MMKVCore"
+                val mmkvPath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/Pods/MMKV"
+                val mmkvCorePath = "${buildDir.absolutePath}/cocoapods/synthetic/IOS/Pods/MMKVCore"
                 linkerOpts += listOf(
                     "-F$mmkvPath",
                     "-rpath", mmkvPath,
@@ -81,7 +81,7 @@ kotlin {
             iosArm64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
             dependencies {
-                implementation("io.ktor:ktor-client-darwin:2.1.0")
+                implementation("io.ktor:ktor-client-ios:2.1.0")
             }
         }
         val iosX64Test by getting
