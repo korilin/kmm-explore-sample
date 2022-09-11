@@ -1,7 +1,6 @@
 # kmm-explore-sample
-KMM 探索例子
 
-一个 KMM 入手例子。
+一个 KMM 学习例子
 
 ## 截图
 
